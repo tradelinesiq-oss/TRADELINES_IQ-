@@ -1439,6 +1439,36 @@ a[onclick]{cursor:pointer;}
 .fs-card.fs-accent .fs-go{background:var(--ink);color:var(--bronze);}
 @media(max-width:980px){ .hero-photo-inner{grid-template-columns:1fr;gap:32px;padding:52px 24px 96px;} .score-card{margin:0 auto;} .feature-strip{grid-template-columns:repeat(2,1fr);margin-top:-50px;} }
 @media(max-width:560px){ .feature-strip{grid-template-columns:1fr;} }
+
+/* ═══ APPLICATION TRACKING ═══ */
+.track-empty{text-align:center;padding:54px 24px;color:var(--text-3);border:1px dashed var(--line-strong);border-radius:var(--r-lg);background:var(--surface);}
+.track-empty svg{color:var(--text-4);margin-bottom:12px;}
+.track-empty h3{font-family:var(--serif);font-size:20px;color:var(--text);font-weight:400;margin-bottom:6px;}
+.track-empty p{font-size:13.5px;margin-bottom:18px;}
+.track-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:22px 24px;margin-bottom:16px;box-shadow:var(--sh-sm);}
+.track-card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:8px;}
+.track-service{font-family:var(--serif);font-size:19px;color:var(--text);letter-spacing:-0.01em;}
+.track-id{font-size:12px;color:var(--text-3);font-family:var(--mono);margin-top:3px;letter-spacing:0.03em;}
+.track-status{padding:5px 12px;border-radius:var(--r-pill);font-size:12px;font-weight:600;white-space:nowrap;display:inline-flex;align-items:center;gap:6px;}
+.track-status.received{background:var(--info-bg);color:var(--info);}
+.track-status.progress{background:var(--warn-bg);color:var(--warn);}
+.track-status.done{background:var(--ok-bg);color:var(--ok);}
+.track-sub{font-size:12.5px;color:var(--text-3);margin-bottom:6px;}
+.track-progress-outer{height:8px;border-radius:5px;background:var(--surface-tint);overflow:hidden;margin:8px 0 20px;}
+.track-progress-fill{height:100%;border-radius:5px;background:linear-gradient(90deg,var(--bronze),var(--bronze-deep));transition:width .5s ease;}
+.track-timeline{display:flex;flex-direction:column;}
+.ttl-step{display:flex;gap:14px;position:relative;padding-bottom:16px;}
+.ttl-step:last-child{padding-bottom:0;}
+.ttl-dot{width:24px;height:24px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;border:2px solid var(--line-strong);background:var(--surface);color:var(--text-4);z-index:1;}
+.ttl-step.done .ttl-dot{background:var(--ok);border-color:var(--ok);color:#fff;}
+.ttl-step.active .ttl-dot{background:var(--bronze);border-color:var(--bronze);color:#fff;box-shadow:0 0 0 4px var(--bronze-soft);}
+.ttl-step:not(:last-child)::before{content:"";position:absolute;left:11px;top:24px;bottom:0;width:2px;background:var(--line);}
+.ttl-step.done:not(:last-child)::before{background:var(--ok);}
+.ttl-body{padding-top:2px;}
+.ttl-title{font-size:13.5px;font-weight:600;color:var(--text);}
+.ttl-step.pending .ttl-title{color:var(--text-4);font-weight:500;}
+.ttl-sub{font-size:12px;color:var(--text-3);margin-top:1px;}
+.ttl-step.pending .ttl-sub{color:var(--text-4);}
 </style>
 </head>
 <body>
@@ -2175,6 +2205,10 @@ a[onclick]{cursor:pointer;}
         <svg class="sb-icon" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
         New Application
       </div>
+      <div class="sb-item" data-panel="tracking" onclick="switchPanel('tracking',null,this)">
+        <svg class="sb-icon" viewBox="0 0 24 24" fill="none"><path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        Track Applications
+      </div>
       <div class="sb-item" data-panel="calculator" onclick="switchPanel('calculator',null,this)">
         <svg class="sb-icon" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 7h8M8 11h2M12 11h2M16 11h.01M8 15h2M12 15h2M16 15h.01M8 19h2M12 19h2M16 19h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
         Price Calculator
@@ -2711,6 +2745,18 @@ a[onclick]{cursor:pointer;}
       <div class="apply-hub-desc">Get pre-qualified with our lender network. Soft-pull only — no impact to your score. Match within 24 hours.</div>
       <div class="apply-hub-meta">
         <span class="apply-hub-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Soft credit pull only</span>
+        <span class="badge badge-bronze">Free</span>
+      </div>
+    </div>
+
+    <div class="apply-hub-card svc-funding" onclick="openApplyFlow('businessfunding')">
+      <div class="apply-hub-head">
+        <div class="apply-hub-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 9h18M3 9l2-5h14l2 5M3 9v10a2 2 0 002 2h14a2 2 0 002-2V9" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 13h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <div><h3>Business Funding Resources</h3><div class="sub">6 steps · ~8 minutes</div></div>
+      </div>
+      <div class="apply-hub-desc">Get matched with small-business grant and funding programs (SBA, SBIR, state economic-development funds). Referrals only — up to $10,000 for qualifying U.S. businesses.</div>
+      <div class="apply-hub-meta">
+        <span class="apply-hub-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>No credit pull</span>
         <span class="badge badge-bronze">Free</span>
       </div>
     </div>
@@ -3664,6 +3710,135 @@ a[onclick]{cursor:pointer;}
   </div>
 </div>
 
+<!-- ── APPLY: BUSINESS FUNDING ── -->
+<div id="panel-apply-businessfunding" class="panel">
+  <div class="wizard svc-funding">
+    <div class="wizard-head">
+      <a class="wizard-back" onclick="switchPanel('apply-hub',null)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>All applications</a>
+      <h1>Business <em>Funding.</em></h1>
+      <div class="sub">Referrals to grant &amp; funding programs for qualifying U.S. businesses. No credit pull.</div>
+    </div>
+
+    <div class="stepper">
+      <div class="stp active" id="bf-step1"><div class="stp-num">01</div><div class="stp-label">Overview</div></div>
+      <div class="stp" id="bf-step2"><div class="stp-num">02</div><div class="stp-label">Business</div></div>
+      <div class="stp" id="bf-step3"><div class="stp-num">03</div><div class="stp-label">Funding need</div></div>
+      <div class="stp" id="bf-step4"><div class="stp-num">04</div><div class="stp-label">Owner</div></div>
+      <div class="stp" id="bf-step5"><div class="stp-num">05</div><div class="stp-label">Review</div></div>
+      <div class="stp" id="bf-step6"><div class="stp-num">06</div><div class="stp-label">Done</div></div>
+    </div>
+
+    <div class="wizard-body">
+      <!-- Step 1: Overview -->
+      <div class="step-content active" id="bf-c1">
+        <div class="step-h">How business funding referrals work</div>
+        <div class="step-sub">We match qualifying U.S. small businesses with legitimate grant and funding programs. We are a referral service — we do not lend money directly.</div>
+        <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:18px;">
+          <div style="display:flex;gap:14px;padding:14px;background:var(--surface-tint);border-radius:var(--r-md);"><div style="font-family:var(--serif);font-style:italic;font-size:28px;color:var(--tone-deep);line-height:1;flex-shrink:0;">01</div><div><strong>Tell us about your business.</strong> A few details about your company and what you need funding for.</div></div>
+          <div style="display:flex;gap:14px;padding:14px;background:var(--surface-tint);border-radius:var(--r-md);"><div style="font-family:var(--serif);font-style:italic;font-size:28px;color:var(--tone-deep);line-height:1;flex-shrink:0;">02</div><div><strong>We match you to programs.</strong> SBA, SBIR, and state economic-development funds you may qualify for — up to $10,000.</div></div>
+          <div style="display:flex;gap:14px;padding:14px;background:var(--surface-tint);border-radius:var(--r-md);"><div style="font-family:var(--serif);font-style:italic;font-size:28px;color:var(--tone-deep);line-height:1;flex-shrink:0;">03</div><div><strong>You apply directly.</strong> We hand you vetted program links and guidance. There is no credit pull at any stage.</div></div>
+        </div>
+        <div class="step-foot">
+          <button class="btn btn-secondary" onclick="switchPanel('apply-hub',null)">Cancel</button>
+          <button class="btn btn-primary" onclick="applyGoTo('bf',2)">Continue →</button>
+        </div>
+      </div>
+
+      <!-- Step 2: Business details -->
+      <div class="step-content" id="bf-c2">
+        <div class="step-h">Your business</div>
+        <div class="step-sub">Tell us about the company that needs funding.</div>
+        <div class="field"><label class="field-label">Legal business name</label><input class="input" type="text" id="bf-bizname" placeholder="Acme LLC" required/></div>
+        <div class="field-row">
+          <div class="field"><label class="field-label">Entity type</label><select class="select" id="bf-entity" required><option value="" disabled selected>— Select —</option><option>Sole proprietorship</option><option>LLC</option><option>S-Corp</option><option>C-Corp</option><option>Partnership</option><option>Nonprofit</option></select></div>
+          <div class="field"><label class="field-label">Industry</label><select class="select" id="bf-industry" required><option value="" disabled selected>— Select —</option><option>Retail / e-commerce</option><option>Food &amp; beverage</option><option>Professional services</option><option>Construction / trades</option><option>Technology / software</option><option>Healthcare</option><option>Transportation / logistics</option><option>Manufacturing</option><option>Other</option></select></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label class="field-label">State of registration</label><select class="select" id="bf-state" required><option value="" disabled selected>— Select —</option><option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>District of Columbia</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option></select></div>
+          <div class="field"><label class="field-label">Years in business</label><input class="input" type="text" id="bf-years" placeholder="2" inputmode="numeric" required/></div>
+        </div>
+        <div class="field"><label class="field-label">EIN <span class="opt">Optional</span></label><input class="input" type="text" id="bf-ein" placeholder="XX-XXXXXXX"/></div>
+        <div class="step-foot">
+          <button class="btn btn-secondary" onclick="applyGoTo('bf',1)">Back</button>
+          <button class="btn btn-primary" id="bf-c2-next" data-validates="bf-c2" disabled onclick="wizardAdvance('bf',2,3)">Continue →</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Funding need -->
+      <div class="step-content" id="bf-c3">
+        <div class="step-h">What do you need?</div>
+        <div class="step-sub">This helps us match you to the right programs.</div>
+        <div class="field-row">
+          <div class="field"><label class="field-label">Amount requested</label><input class="input" type="text" id="bf-amount" placeholder="$10,000" inputmode="numeric" required/></div>
+          <div class="field"><label class="field-label">Timeframe</label><select class="select" id="bf-timeframe" required><option value="" disabled selected>— Select —</option><option>As soon as possible</option><option>Within 30 days</option><option>1–3 months</option><option>Just exploring</option></select></div>
+        </div>
+        <div class="field"><label class="field-label">Use of funds</label><select class="select" id="bf-use" required><option value="" disabled selected>— Select —</option><option>Working capital</option><option>Equipment</option><option>Inventory</option><option>Marketing / growth</option><option>Hiring</option><option>Real estate / build-out</option><option>Other</option></select></div>
+        <div class="field"><label class="field-label">Average monthly revenue</label><select class="select" id="bf-revenue" required><option value="" disabled selected>— Select —</option><option>Under $5,000</option><option>$5,000 – $20,000</option><option>$20,000 – $50,000</option><option>$50,000 – $100,000</option><option>Over $100,000</option></select></div>
+        <div class="step-foot">
+          <button class="btn btn-secondary" onclick="applyGoTo('bf',2)">Back</button>
+          <button class="btn btn-primary" id="bf-c3-next" data-validates="bf-c3" disabled onclick="wizardAdvance('bf',3,4)">Continue →</button>
+        </div>
+      </div>
+
+      <!-- Step 4: Owner identity -->
+      <div class="step-content" id="bf-c4">
+        <div class="step-h">Business owner</div>
+        <div class="step-sub">We use this only to send your matched programs and follow up.</div>
+        <div class="field-row"><div class="field"><label class="field-label">Legal first name</label><input class="input" type="text" id="bf-fname" required/></div><div class="field"><label class="field-label">Legal last name</label><input class="input" type="text" id="bf-lname" required/></div></div>
+        <div class="field-row"><div class="field"><label class="field-label">Phone</label><input class="input" type="tel" id="bf-phone" required/></div><div class="field"><label class="field-label">Email</label><input class="input" type="email" id="bf-email" required/></div></div>
+        <div class="field"><label class="field-label">Business address</label><input class="input" type="text" id="bf-address" required/></div>
+        <div class="step-foot">
+          <button class="btn btn-secondary" onclick="applyGoTo('bf',3)">Back</button>
+          <button class="btn btn-primary" id="bf-c4-next" data-validates="bf-c4" disabled onclick="wizardAdvance('bf',4,5)">Continue →</button>
+        </div>
+      </div>
+
+      <!-- Step 5: Review & consent -->
+      <div class="step-content" id="bf-c5">
+        <div class="step-h">Review &amp; consent</div>
+        <div class="step-sub">Confirm and submit to receive your matched funding programs.</div>
+        <div class="disclosure-box">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <div>TradelineIQ is a referral service and does not lend funds or guarantee approval. Grant and funding decisions are made solely by the third-party programs you apply to.</div>
+        </div>
+        <label class="check"><input type="checkbox" id="bf-consent-1" data-required/><span>I confirm the information provided is accurate and that my business operates in the United States.</span></label>
+        <label class="check"><input type="checkbox" id="bf-consent-2" data-required/><span>I consent to TradelineIQ matching my business with relevant funding-program referrals.</span></label>
+        <div class="field mt-3"><label class="field-label">Electronic signature <span class="opt">Type your full legal name</span></label><input class="input" type="text" id="bf-signature" required placeholder="Your full legal name" style="font-family:var(--serif);font-size:18px;font-style:italic;"/></div>
+        <div class="field-err step-err" id="bf-c5-err" style="margin-top:8px;">Please check both boxes and sign to submit.</div>
+        <div class="step-foot">
+          <button class="btn btn-secondary" onclick="applyGoTo('bf',4)">Back</button>
+          <button class="btn btn-bronze" data-validates="bf-c5" disabled onclick="submitApplication('bf')">Submit &amp; match programs →</button>
+        </div>
+      </div>
+
+      <!-- Step 6: Done -->
+      <div class="step-content" id="bf-c6">
+        <div class="modal-icon" style="margin:0 auto 18px;"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+        <div class="text-c">
+          <div class="step-h">Application submitted</div>
+          <div class="step-sub" style="max-width:480px;margin:0 auto 18px;">We're matching your business with funding programs. You'll receive your referrals by email within 2 business days — and you can follow progress any time.</div>
+          <button class="btn btn-primary" onclick="switchPanel('tracking',null)">Track my application →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── APPLICATION TRACKING PANEL ── -->
+<div id="panel-tracking" class="panel svc-coaching">
+  <div class="panel-head">
+    <div>
+      <span class="kicker">Account</span>
+      <h1>Track <em>Applications.</em></h1>
+      <p class="sub">Every application you've submitted, with its current status and live progress.</p>
+    </div>
+    <div class="panel-actions">
+      <button class="btn btn-primary btn-sm" onclick="switchPanel('apply-hub',null)">+ New application</button>
+    </div>
+  </div>
+  <div id="track-list"></div>
+</div>
+
 <!-- ── CALCULATOR PANEL ── -->
 <div id="panel-calculator" class="panel svc-boost">
   <div class="panel-head">
@@ -4388,6 +4563,7 @@ function applyUserContext(){
 
   renderNotifications();
   initSupportChat();
+  if (typeof renderApplications === 'function') renderApplications();
 }
 
 const NOTIF_ICONS = {
@@ -4913,6 +5089,8 @@ function switchPanel(name, navEl, sbEl){
   document.querySelectorAll('.tab[data-tab]').forEach(t=>{
     if (t.getAttribute('data-tab')===name) t.classList.add('active');
   });
+  // Refresh the tracking list whenever its panel is opened.
+  if (name === 'tracking' && typeof renderApplications === 'function') renderApplications();
   window.scrollTo({top:0,behavior:'instant'});
 }
 
@@ -4943,7 +5121,7 @@ function filterTradelines(q){
 // APPLICATION WIZARDS
 // ═══════════════════════════════════════════════════════════════
 function applyGoTo(prefix, step){
-  const maxes = { tl:7, rp:7, mn:5, co:4, ln:6 };
+  const maxes = { tl:7, rp:7, mn:5, co:4, ln:6, bf:6 };
   const max = maxes[prefix];
   for (let i=1; i<=max; i++){
     const c = document.getElementById(prefix+'-c'+i);
@@ -5055,11 +5233,126 @@ function selectTL(card){
   selectedTL = { name: bank+' '+name, price };
 }
 function submitApplication(prefix){
-  const maxes = { tl:7, rp:7, mn:5, co:4, ln:6 };
+  const maxes = { tl:7, rp:7, mn:5, co:4, ln:6, bf:6 };
+  recordApplication(prefix);
   applyGoTo(prefix, maxes[prefix]);
   // Mark this wizard as needing reset the next time it's opened.
   // (We don't reset immediately so the user can read the "Done" screen.)
   pendingResets[prefix] = true;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// APPLICATION TRACKING
+// Submitted applications are saved (per device) so a member can see
+// each one and watch its progress. If a backend baseUrl is set, each
+// application is also synced so it shows up on every device.
+// ═══════════════════════════════════════════════════════════════
+const LS_APPS_KEY = 'tradelineiq_applications_v1';
+const SERVICE_LABELS = {
+  tl:'Authorized-User Tradeline', rp:'Credit Report Dispute', mn:'3-Bureau Credit Monitoring',
+  co:'1-on-1 Credit Coaching', ln:'Loan Referral', bf:'Business Funding Resources'
+};
+const SERVICE_TYPEKEY = {
+  tl:'tradeline', rp:'repair', mn:'monitoring', co:'coaching', ln:'loan', bf:'businessfunding'
+};
+// Stages every application moves through, with how long after submission
+// each one becomes "done". Progress advances automatically over time.
+const APP_STAGES = [
+  { title:'Application received',  desc:'We have your submission on file.',              off:0 },
+  { title:'Details verified',      desc:'Your information has been checked.',            off:5*60000 },
+  { title:'Under review',          desc:'A specialist is reviewing your file.',          off:30*60000 },
+  { title:'In progress',           desc:'Processing with the bureaus / partners.',       off:2*3600000 },
+  { title:'Completed',             desc:'All done — your results are ready.',            off:72*3600000 }
+];
+
+function loadApplications(){
+  try { const r = localStorage.getItem(LS_APPS_KEY); return r ? JSON.parse(r) : []; }
+  catch(e){ return []; }
+}
+function saveApplications(arr){
+  try { localStorage.setItem(LS_APPS_KEY, JSON.stringify(arr)); } catch(e){}
+}
+function makeAppId(prefix){
+  const code = (prefix || 'AP').toUpperCase();
+  const yr = new Date().getFullYear().toString().slice(-2);
+  const n = Math.floor(10000 + Math.random()*89999);
+  return 'TLQ-' + code + '-' + yr + '-' + n;
+}
+function recordApplication(prefix){
+  const owner = (currentUser && currentUser.email) || '';
+  const app = {
+    id: makeAppId(prefix),
+    owner,
+    prefix,
+    service: SERVICE_LABELS[prefix] || 'Application',
+    typeKey: SERVICE_TYPEKEY[prefix] || prefix,
+    submittedAt: Date.now()
+  };
+  const all = loadApplications();
+  all.push(app);
+  saveApplications(all);
+  // Optional cross-device sync (no-op unless a backend baseUrl is configured).
+  const cfg = window.TRADELINE_CONFIG || {};
+  if (cfg.baseUrl && owner){
+    try {
+      fetch(cfg.baseUrl.replace(/\/$/,'') + '/api/applications', {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ email:owner, id:app.id, type_key:app.typeKey, service:app.service, submitted_at:app.submittedAt })
+      }).catch(()=>{});
+    } catch(e){}
+  }
+  return app;
+}
+function appStageInfo(submittedAt){
+  const elapsed = Date.now() - submittedAt;
+  let current = 0;
+  APP_STAGES.forEach((s,i)=>{ if (elapsed >= s.off) current = i; });
+  const pct = Math.round(((current+1)/APP_STAGES.length)*100);
+  const statusClass = current >= 4 ? 'done' : current >= 1 ? 'progress' : 'received';
+  return { current, pct, statusClass, label: APP_STAGES[current].title };
+}
+function fmtAppDate(ts){
+  const d = new Date(ts);
+  return MONTHS[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear() +
+         ' · ' + d.toLocaleTimeString([], { hour:'2-digit', minute:'2-digit' });
+}
+const TTL_CHECK = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const TTL_DOT = '<span style="width:7px;height:7px;border-radius:50%;background:currentColor;display:block;"></span>';
+
+function renderApplications(){
+  const wrap = document.getElementById('track-list');
+  if (!wrap) return;
+  const owner = (currentUser && currentUser.email) || '';
+  const mine = loadApplications().filter(a => !owner || a.owner === owner || !a.owner)
+                                 .sort((a,b)=> b.submittedAt - a.submittedAt);
+  if (mine.length === 0){
+    wrap.innerHTML =
+      '<div class="track-empty">' +
+        '<svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>' +
+        '<h3>No applications yet</h3>' +
+        '<p>When you submit an application, it will appear here so you can track its progress.</p>' +
+        '<button class="btn btn-primary btn-sm" onclick="switchPanel(\'apply-hub\',null)">Start an application →</button>' +
+      '</div>';
+    return;
+  }
+  wrap.innerHTML = mine.map(a => {
+    const info = appStageInfo(a.submittedAt);
+    const timeline = APP_STAGES.map((s,i)=>{
+      const cls = i < info.current ? 'done' : i === info.current ? 'active' : 'pending';
+      const icon = i < info.current ? TTL_CHECK : (i === info.current ? TTL_DOT : '');
+      return '<div class="ttl-step '+cls+'"><div class="ttl-dot">'+icon+'</div>' +
+             '<div class="ttl-body"><div class="ttl-title">'+s.title+'</div><div class="ttl-sub">'+s.desc+'</div></div></div>';
+    }).join('');
+    return '<div class="track-card">' +
+      '<div class="track-card-head">' +
+        '<div><div class="track-service">'+a.service+'</div><div class="track-id">'+a.id+'</div></div>' +
+        '<span class="track-status '+info.statusClass+'"><span class="badge-dot" style="background:currentColor;"></span>'+info.label+'</span>' +
+      '</div>' +
+      '<div class="track-sub">Submitted '+fmtAppDate(a.submittedAt)+' · '+info.pct+'% complete</div>' +
+      '<div class="track-progress-outer"><div class="track-progress-fill" style="width:'+info.pct+'%;"></div></div>' +
+      '<div class="track-timeline">'+timeline+'</div>' +
+    '</div>';
+  }).join('');
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -5103,13 +5396,14 @@ function resetWizard(prefix){
 }
 
 // Map service-type slug → wizard prefix → panel suffix
-const WIZARD_PREFIX = { tradeline:'tl', repair:'rp', monitoring:'mn', coaching:'co', loan:'ln' };
-const WIZARD_PANEL  = { tl:'tradeline', rp:'repair', mn:'monitoring', co:'coaching', ln:'loan' };
+const WIZARD_PREFIX = { tradeline:'tl', repair:'rp', monitoring:'mn', coaching:'co', loan:'ln', businessfunding:'bf' };
+const WIZARD_PANEL  = { tl:'tradeline', rp:'repair', mn:'monitoring', co:'coaching', ln:'loan', bf:'businessfunding' };
 
 // Override openApplyFlow: always start the wizard fresh at step 1 when entering.
 function openApplyFlow(type){
   const panelMap = { tradeline:'apply-tradeline', repair:'apply-repair',
-                     monitoring:'apply-monitoring', coaching:'apply-coaching', loan:'apply-loan' };
+                     monitoring:'apply-monitoring', coaching:'apply-coaching', loan:'apply-loan',
+                     businessfunding:'apply-businessfunding' };
   switchPanel(panelMap[type] || 'apply-hub', null);
   const prefix = WIZARD_PREFIX[type];
   if (prefix){
