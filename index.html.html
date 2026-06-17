@@ -1788,7 +1788,7 @@ a[onclick]{cursor:pointer;}
         <!-- Step 1: Basics -->
         <div id="rp1">
           <div class="field-row">
-            <div class="field"><label class="field-label">First name</label><input class="input" type="text" id="r-fname" placeholder="Marcus" autocomplete="given-name"/></div>
+            <div class="field"><label class="field-label">First name</label><input class="input" type="text" id="r-fname" placeholder="First name" autocomplete="given-name"/></div>
             <div class="field"><label class="field-label">Last name</label><input class="input" type="text" id="r-lname" placeholder="Rivera" autocomplete="family-name"/></div>
           </div>
           <div class="field">
@@ -2276,15 +2276,15 @@ a[onclick]{cursor:pointer;}
           <span class="badge badge-ok"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>Verified</span>
         </div>
         <div class="field-row">
-          <div class="field"><label class="field-label">First name (legal)</label><input class="input" type="text" value="Marcus" id="p-fname"/></div>
-          <div class="field"><label class="field-label">Middle name <span class="opt">Optional</span></label><input class="input" type="text" value="James" id="p-mname"/></div>
+          <div class="field"><label class="field-label">First name (legal)</label><input class="input" type="text" value="" id="p-fname"/></div>
+          <div class="field"><label class="field-label">Middle name <span class="opt">Optional</span></label><input class="input" type="text" value="" id="p-mname"/></div>
         </div>
         <div class="field-row">
-          <div class="field"><label class="field-label">Last name (legal)</label><input class="input" type="text" value="Rivera" id="p-lname"/></div>
+          <div class="field"><label class="field-label">Last name (legal)</label><input class="input" type="text" value="" id="p-lname"/></div>
           <div class="field"><label class="field-label">Suffix <span class="opt">Jr / Sr / III</span></label><input class="input" type="text" placeholder="—" id="p-suffix"/></div>
         </div>
         <div class="field-row">
-          <div class="field"><label class="field-label">Date of birth</label><input class="input" type="date" value="1988-03-14" id="p-dob"/></div>
+          <div class="field"><label class="field-label">Date of birth</label><input class="input" type="date" value="" id="p-dob"/></div>
           <div class="field"><label class="field-label">Citizenship status</label><select class="select" id="p-citizen"><option>U.S. Citizen</option><option>Permanent Resident</option><option>ITIN holder</option><option>Other</option></select></div>
         </div>
       </div>
@@ -2298,8 +2298,8 @@ a[onclick]{cursor:pointer;}
           </div>
         </div>
         <div class="field-row">
-          <div class="field"><label class="field-label">Email address</label><input class="input" type="email" value="demo@tradeline.io" id="p-email"/></div>
-          <div class="field"><label class="field-label">Phone number</label><input class="input" type="tel" value="+1 (555) 423-7890" id="p-phone"/></div>
+          <div class="field"><label class="field-label">Email address</label><input class="input" type="email" value="" id="p-email"/></div>
+          <div class="field"><label class="field-label">Phone number</label><input class="input" type="tel" value="" id="p-phone"/></div>
         </div>
         <label class="check"><input type="checkbox" checked/><span>Send me email alerts for score changes and dispute updates</span></label>
         <label class="check"><input type="checkbox" checked/><span>Send me SMS alerts for security events (recommended)</span></label>
@@ -2313,16 +2313,16 @@ a[onclick]{cursor:pointer;}
             <div class="sub">Your current residential address as it appears on your credit file.</div>
           </div>
         </div>
-        <div class="field"><label class="field-label">Street address</label><input class="input" type="text" value="1428 Linden Avenue" id="p-street"/></div>
+        <div class="field"><label class="field-label">Street address</label><input class="input" type="text" value="" id="p-street"/></div>
         <div class="field-row">
-          <div class="field"><label class="field-label">Apt / unit <span class="opt">Optional</span></label><input class="input" type="text" value="Apt 7B" id="p-apt"/></div>
-          <div class="field"><label class="field-label">City</label><input class="input" type="text" value="Austin" id="p-city"/></div>
+          <div class="field"><label class="field-label">Apt / unit <span class="opt">Optional</span></label><input class="input" type="text" value="" id="p-apt"/></div>
+          <div class="field"><label class="field-label">City</label><input class="input" type="text" value="" id="p-city"/></div>
         </div>
         <div class="field-row-3">
           <div class="field"><label class="field-label">State</label>
             <select class="select" id="p-state"><option>Texas</option><option>California</option><option>New York</option><option>Florida</option><option>Other</option></select>
           </div>
-          <div class="field"><label class="field-label">ZIP</label><input class="input" type="text" value="78701" maxlength="5" id="p-zip" inputmode="numeric"/></div>
+          <div class="field"><label class="field-label">ZIP</label><input class="input" type="text" value="" maxlength="5" id="p-zip" inputmode="numeric"/></div>
           <div class="field"><label class="field-label">Country</label><select class="select" disabled style="opacity:0.7;"><option>United States</option></select></div>
         </div>
         <label class="check"><input type="checkbox"/><span>My billing address is different from my mailing address</span></label>
@@ -2970,16 +2970,16 @@ a[onclick]{cursor:pointer;}
         <div class="step-h">Verify your identity</div>
         <div class="step-sub">We need your legal name and date of birth to match against the bureau file we'll create your AU position on.</div>
         <div class="field-row">
-          <div class="field"><label class="field-label">Legal first name</label><input class="input" type="text" id="tl-fname" value="Marcus" required/></div>
-          <div class="field"><label class="field-label">Legal middle name <span class="opt">If on ID</span></label><input class="input" type="text" id="tl-mname" value="James"/></div>
+          <div class="field"><label class="field-label">Legal first name</label><input class="input" type="text" id="tl-fname" value="" required/></div>
+          <div class="field"><label class="field-label">Legal middle name <span class="opt">If on ID</span></label><input class="input" type="text" id="tl-mname" value=""/></div>
         </div>
         <div class="field-row">
-          <div class="field"><label class="field-label">Legal last name</label><input class="input" type="text" id="tl-lname" value="Rivera" required/></div>
+          <div class="field"><label class="field-label">Legal last name</label><input class="input" type="text" id="tl-lname" value="" required/></div>
           <div class="field"><label class="field-label">Suffix <span class="opt">Jr / Sr / III</span></label><input class="input" type="text" id="tl-suffix" placeholder="—"/></div>
         </div>
         <div class="field-row">
-          <div class="field"><label class="field-label">Date of birth</label><input class="input" type="date" id="tl-dob" value="1988-03-14" required data-min-age="18"/></div>
-          <div class="field"><label class="field-label">Citizenship</label><select class="select" id="tl-citizen" required><option>U.S. Citizen</option><option>Permanent Resident</option><option>ITIN holder</option></select></div>
+          <div class="field"><label class="field-label">Date of birth</label><input class="input" type="date" id="tl-dob" value="" required data-min-age="18"/></div>
+          <div class="field"><label class="field-label">Citizenship</label><select class="select" id="tl-citizen" required><option value="" disabled selected>— Select —</option><option>U.S. Citizen</option><option>Permanent Resident</option><option>ITIN holder</option></select></div>
         </div>
         <div class="shield-note">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 6v6c0 5 3 9 9 11 6-2 9-6 9-11V6l-9-4z" stroke="currentColor" stroke-width="2"/></svg>
@@ -2995,15 +2995,15 @@ a[onclick]{cursor:pointer;}
       <div class="step-content" id="tl-c3">
         <div class="step-h">Address & SSN/ITIN</div>
         <div class="step-sub">Required for bureau matching. Your SSN is encrypted with AES-256 and never displayed in full after you save it.</div>
-        <div class="field"><label class="field-label">Street address</label><input class="input" type="text" id="tl-street" value="1428 Linden Avenue" required/></div>
+        <div class="field"><label class="field-label">Street address</label><input class="input" type="text" id="tl-street" value="" required/></div>
         <div class="field-row">
-          <div class="field"><label class="field-label">Apt / unit <span class="opt">Optional</span></label><input class="input" type="text" value="Apt 7B"/></div>
-          <div class="field"><label class="field-label">City</label><input class="input" type="text" id="tl-city" value="Austin" required/></div>
+          <div class="field"><label class="field-label">Apt / unit <span class="opt">Optional</span></label><input class="input" type="text" value=""/></div>
+          <div class="field"><label class="field-label">City</label><input class="input" type="text" id="tl-city" value="" required/></div>
         </div>
         <div class="field-row-3">
-          <div class="field"><label class="field-label">State</label><select class="select" id="tl-state" required><option>Texas</option><option>California</option><option>New York</option></select></div>
-          <div class="field"><label class="field-label">ZIP</label><input class="input" type="text" id="tl-zip" value="78701" maxlength="5" required/></div>
-          <div class="field"><label class="field-label">Phone</label><input class="input" type="tel" id="tl-phone" value="+1 (555) 423-7890" required/></div>
+          <div class="field"><label class="field-label">State</label><select class="select" id="tl-state" required><option value="" disabled selected>— Select —</option><option>Texas</option><option>California</option><option>New York</option></select></div>
+          <div class="field"><label class="field-label">ZIP</label><input class="input" type="text" id="tl-zip" value="" maxlength="5" required/></div>
+          <div class="field"><label class="field-label">Phone</label><input class="input" type="tel" id="tl-phone" value="" required/></div>
         </div>
         <div class="divider"></div>
         <div class="field">
@@ -3060,7 +3060,7 @@ a[onclick]{cursor:pointer;}
         <label class="check"><input type="checkbox" id="tl-consent-1" data-required/><span>I confirm I am not using this AU tradeline to misrepresent my finances on a current or pending loan application.</span></label>
         <label class="check"><input type="checkbox" id="tl-consent-2" data-required/><span>I agree to the <a>Tradeline Service Agreement</a> and <a>3-Day Cancellation Right</a>.</span></label>
         <label class="check"><input type="checkbox" id="tl-consent-3" data-required/><span>I authorize TradelineIQ to use my legal name, DOB, address, and SSN solely for the purpose of bureau-file matching for this enrollment.</span></label>
-        <div class="field mt-3"><label class="field-label">Electronic signature <span class="opt">Type your full legal name</span></label><input class="input" type="text" id="tl-signature" required placeholder="Marcus J. Rivera" style="font-family:var(--serif);font-size:18px;font-style:italic;"/></div>
+        <div class="field mt-3"><label class="field-label">Electronic signature <span class="opt">Type your full legal name</span></label><input class="input" type="text" id="tl-signature" required placeholder="Type your full legal name" style="font-family:var(--serif);font-size:18px;font-style:italic;"/></div>
         <div class="field-err step-err" id="tl-c5-err" style="margin-top:8px;">Please accept all three disclosures and sign with your full legal name to continue.</div>
         <div class="step-foot">
           <button class="btn btn-secondary" onclick="applyGoTo('tl',4)">Back</button>
@@ -3081,23 +3081,13 @@ a[onclick]{cursor:pointer;}
 
         <div class="field-label" style="margin-bottom:8px;">Select cryptocurrency</div>
         <div class="coin-grid" id="tl-coins">
-          <div class="coin-opt selected" data-coin="usdt" data-rate="1.00" onclick="selectCoin('tl',this)"><div class="coin-sym usdt">₮</div><div class="coin-name">USDT</div><div class="coin-tick">Tether</div></div>
-          <div class="coin-opt" data-coin="usdc" data-rate="1.00" onclick="selectCoin('tl',this)"><div class="coin-sym usdc">$</div><div class="coin-name">USDC</div><div class="coin-tick">USD Coin</div></div>
-          <div class="coin-opt" data-coin="btc" data-rate="0.0000094" onclick="selectCoin('tl',this)"><div class="coin-sym btc">₿</div><div class="coin-name">BTC</div><div class="coin-tick">Bitcoin</div></div>
-          <div class="coin-opt" data-coin="eth" data-rate="0.00027" onclick="selectCoin('tl',this)"><div class="coin-sym eth">Ξ</div><div class="coin-name">ETH</div><div class="coin-tick">Ethereum</div></div>
-          <div class="coin-opt" data-coin="sol" data-rate="0.0061" onclick="selectCoin('tl',this)"><div class="coin-sym sol">◎</div><div class="coin-name">SOL</div><div class="coin-tick">Solana</div></div>
-          <div class="coin-opt" data-coin="bnb" data-rate="0.00046" onclick="selectCoin('tl',this)"><div class="coin-sym bnb">B</div><div class="coin-name">BNB</div><div class="coin-tick">BNB Chain</div></div>
-          <div class="coin-opt" data-coin="ltc" data-rate="0.0033" onclick="selectCoin('tl',this)"><div class="coin-sym ltc">Ł</div><div class="coin-name">LTC</div><div class="coin-tick">Litecoin</div></div>
-          <div class="coin-opt" data-coin="xrp" data-rate="0.45" onclick="selectCoin('tl',this)"><div class="coin-sym xrp">✕</div><div class="coin-name">XRP</div><div class="coin-tick">Ripple</div></div>
+          <div class="coin-opt selected" data-coin="usdt" onclick="selectCoin('tl',this)"><div class="coin-sym usdt">₮</div><div class="coin-name">USDT</div><div class="coin-tick">Tether</div></div>
+          <div class="coin-opt" data-coin="btc" onclick="selectCoin('tl',this)"><div class="coin-sym btc">₿</div><div class="coin-name">BTC</div><div class="coin-tick">Bitcoin</div></div>
+          <div class="coin-opt" data-coin="ltc" onclick="selectCoin('tl',this)"><div class="coin-sym ltc">Ł</div><div class="coin-name">LTC</div><div class="coin-tick">Litecoin</div></div>
         </div>
 
         <div class="field-label" style="margin-bottom:8px;">Network</div>
-        <div class="net-row" id="tl-nets">
-          <button class="net-pill selected" onclick="selectNet(this)">TRC-20</button>
-          <button class="net-pill" onclick="selectNet(this)">ERC-20</button>
-          <button class="net-pill" onclick="selectNet(this)">BEP-20</button>
-          <button class="net-pill" onclick="selectNet(this)">Solana</button>
-        </div>
+        <div class="net-row" id="tl-nets"></div>
 
         <div class="crypto-wallet-card">
           <div class="cwc-head">
@@ -3133,7 +3123,7 @@ a[onclick]{cursor:pointer;}
             </div>
             <div class="addr-wrap">
               <div class="addr-lbl">Send to wallet address</div>
-              <div class="addr-box" id="tl-wallet-addr">TXg4kFm2yV9zR8nBcQ7eHpA3Lj5dW1sP6N</div>
+              <div class="addr-box" id="tl-wallet-addr">TNFTorYbtRQuMEHnBtxKVJudt8FCNnDXxZ</div>
               <button class="copy-btn" id="tl-copy-btn" onclick="copyAddr('tl-wallet-addr','tl-copy-btn')">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke="currentColor" stroke-width="2"/></svg>
                 Copy address
@@ -3231,11 +3221,11 @@ a[onclick]{cursor:pointer;}
         <div class="step-h">Verify your identity</div>
         <div class="step-sub">Required to file disputes on your behalf.</div>
         <div class="field-row">
-          <div class="field"><label class="field-label">Legal first name</label><input class="input" type="text" value="Marcus" required/></div>
-          <div class="field"><label class="field-label">Legal last name</label><input class="input" type="text" value="Rivera" required/></div>
+          <div class="field"><label class="field-label">Legal first name</label><input class="input" type="text" value="" required/></div>
+          <div class="field"><label class="field-label">Legal last name</label><input class="input" type="text" value="" required/></div>
         </div>
         <div class="field-row">
-          <div class="field"><label class="field-label">Date of birth</label><input class="input" type="date" value="1988-03-14" required data-min-age="18"/></div>
+          <div class="field"><label class="field-label">Date of birth</label><input class="input" type="date" value="" required data-min-age="18"/></div>
           <div class="field"><label class="field-label">Previous last names <span class="opt">If any</span></label><input class="input" type="text" placeholder="Maiden name, etc."/></div>
         </div>
         <div class="step-foot">
@@ -3247,11 +3237,11 @@ a[onclick]{cursor:pointer;}
       <div class="step-content" id="rp-c3">
         <div class="step-h">Address & SSN</div>
         <div class="step-sub">Bureaus require this to verify your file. Encrypted in transit and at rest.</div>
-        <div class="field"><label class="field-label">Current address</label><input class="input" type="text" value="1428 Linden Avenue, Apt 7B" required/></div>
+        <div class="field"><label class="field-label">Current address</label><input class="input" type="text" value="" required/></div>
         <div class="field-row-3">
-          <div class="field"><label class="field-label">City</label><input class="input" type="text" value="Austin" required/></div>
-          <div class="field"><label class="field-label">State</label><select class="select" required><option>Texas</option></select></div>
-          <div class="field"><label class="field-label">ZIP</label><input class="input" type="text" value="78701" required/></div>
+          <div class="field"><label class="field-label">City</label><input class="input" type="text" value="" required/></div>
+          <div class="field"><label class="field-label">State</label><select class="select" required><option value="" disabled selected>— Select —</option><option>Texas</option></select></div>
+          <div class="field"><label class="field-label">ZIP</label><input class="input" type="text" value="" required/></div>
         </div>
         <div class="field"><label class="field-label">Previous addresses <span class="opt">If moved in last 2 years</span></label><textarea class="textarea" placeholder="Street, City, State ZIP — one per line"></textarea></div>
         <div class="divider"></div>
@@ -3274,7 +3264,7 @@ a[onclick]{cursor:pointer;}
         <label class="check"><input type="checkbox" checked/><span>Equifax</span></label>
         <label class="check"><input type="checkbox" checked/><span>TransUnion</span></label>
         <label class="check"><input type="checkbox" checked/><span>Experian</span></label>
-        <div class="field mt-3"><label class="field-label">Reason for dispute</label><select class="select" required><option>Account is not mine (identity theft)</option><option>Payment date / amount is incorrect</option><option>Account is older than 7 years (outdated)</option><option>Status (open / closed) is incorrect</option><option>Account was discharged in bankruptcy</option><option>Other — explain above</option></select></div>
+        <div class="field mt-3"><label class="field-label">Reason for dispute</label><select class="select" required><option value="" disabled selected>— Select —</option><option>Account is not mine (identity theft)</option><option>Payment date / amount is incorrect</option><option>Account is older than 7 years (outdated)</option><option>Status (open / closed) is incorrect</option><option>Account was discharged in bankruptcy</option><option>Other — explain above</option></select></div>
         <div class="step-foot">
           <button class="btn btn-secondary" onclick="applyGoTo('rp',3)">Back</button>
           <button class="btn btn-primary" data-validates="rp-c4" onclick="wizardAdvance('rp',4,5)">Continue →</button>
@@ -3284,20 +3274,22 @@ a[onclick]{cursor:pointer;}
       <div class="step-content" id="rp-c5">
         <div class="step-h">Supporting documents</div>
         <div class="step-sub">Upload anything that supports your dispute. The more evidence, the stronger the case.</div>
-        <div class="doc-uploader" onclick="alert('In production, this opens a secure file picker.')">
+        <label class="doc-uploader" style="cursor:pointer;display:block;">
+          <input type="file" id="rp-docs" required multiple accept="image/*,application/pdf" style="display:none;" onchange="handleDocPick(this)"/>
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M12 16V4m0 0l-5 5m5-5l5 5M3 20h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <h4>Drop files here or browse</h4>
-          <p>PDF, PNG, JPG · Max 20MB each</p>
-        </div>
+          <h4 id="rp-docs-h">Drop files here or browse</h4>
+          <p id="rp-docs-p">PDF, PNG, JPG · Max 20MB each · At least one required</p>
+        </label>
         <div class="doc-list">
           <div class="doc-item"><div class="doc-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="2"/><path d="M14 2v6h6" stroke="currentColor" stroke-width="2"/></svg></div><div class="doc-info"><div class="doc-name">Government-issued ID</div><div class="doc-meta">Required · Not uploaded</div></div></div>
           <div class="doc-item"><div class="doc-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="2"/></svg></div><div class="doc-info"><div class="doc-name">Proof of address (utility / bank statement)</div><div class="doc-meta">Required · Not uploaded</div></div></div>
           <div class="doc-item"><div class="doc-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="2"/></svg></div><div class="doc-info"><div class="doc-name">Recent bureau reports (Eq / TU / Ex)</div><div class="doc-meta">Optional · From annualcreditreport.com</div></div></div>
           <div class="doc-item"><div class="doc-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="2"/></svg></div><div class="doc-info"><div class="doc-name">Evidence supporting disputes</div><div class="doc-meta">Optional · Receipts, statements, etc.</div></div></div>
         </div>
+        <div class="field-err step-err" id="rp-c5-err" style="margin-top:8px;">Please upload at least one supporting document to continue.</div>
         <div class="step-foot">
           <button class="btn btn-secondary" onclick="applyGoTo('rp',4)">Back</button>
-          <button class="btn btn-primary" onclick="applyGoTo('rp',6)">Continue →</button>
+          <button class="btn btn-primary" id="rp-c5-next" data-validates="rp-c5" disabled onclick="wizardAdvance('rp',5,6)">Continue →</button>
         </div>
       </div>
 
@@ -3364,10 +3356,10 @@ a[onclick]{cursor:pointer;}
       <div class="step-content" id="mn-c2">
         <div class="step-h">Identity</div>
         <div class="step-sub">Verify who you are before we pull files.</div>
-        <div class="field-row"><div class="field"><label class="field-label">Legal first name</label><input class="input" type="text" value="Marcus" required/></div><div class="field"><label class="field-label">Legal last name</label><input class="input" type="text" value="Rivera" required/></div></div>
-        <div class="field-row"><div class="field"><label class="field-label">Date of birth</label><input class="input" type="date" value="1988-03-14" required data-min-age="18"/></div><div class="field"><label class="field-label">Phone</label><input class="input" type="tel" value="+1 (555) 423-7890" required/></div></div>
-        <div class="field"><label class="field-label">Email for alerts</label><input class="input" type="email" value="demo@tradeline.io" required/></div>
-        <div class="field"><label class="field-label">Address</label><input class="input" type="text" value="1428 Linden Avenue, Apt 7B, Austin TX 78701" required/></div>
+        <div class="field-row"><div class="field"><label class="field-label">Legal first name</label><input class="input" type="text" value="" required/></div><div class="field"><label class="field-label">Legal last name</label><input class="input" type="text" value="" required/></div></div>
+        <div class="field-row"><div class="field"><label class="field-label">Date of birth</label><input class="input" type="date" value="" required data-min-age="18"/></div><div class="field"><label class="field-label">Phone</label><input class="input" type="tel" value="" required/></div></div>
+        <div class="field"><label class="field-label">Email for alerts</label><input class="input" type="email" value="" required/></div>
+        <div class="field"><label class="field-label">Address</label><input class="input" type="text" value="" required/></div>
         <div class="step-foot"><button class="btn btn-secondary" onclick="applyGoTo('mn',1)">Back</button><button class="btn btn-primary" data-validates="mn-c2" onclick="wizardAdvance('mn',2,3)">Continue →</button></div>
       </div>
 
@@ -3389,24 +3381,19 @@ a[onclick]{cursor:pointer;}
         <div class="field-label" style="margin-bottom:8px;">Pay with</div>
         <div class="coin-grid" id="mn-coins">
           <div class="coin-opt selected" data-coin="usdt" onclick="selectCoin('mn',this)"><div class="coin-sym usdt">₮</div><div class="coin-name">USDT</div><div class="coin-tick">Tether</div></div>
-          <div class="coin-opt" data-coin="usdc" onclick="selectCoin('mn',this)"><div class="coin-sym usdc">$</div><div class="coin-name">USDC</div><div class="coin-tick">USD Coin</div></div>
           <div class="coin-opt" data-coin="btc" onclick="selectCoin('mn',this)"><div class="coin-sym btc">₿</div><div class="coin-name">BTC</div><div class="coin-tick">Bitcoin</div></div>
-          <div class="coin-opt" data-coin="eth" onclick="selectCoin('mn',this)"><div class="coin-sym eth">Ξ</div><div class="coin-name">ETH</div><div class="coin-tick">Ethereum</div></div>
+          <div class="coin-opt" data-coin="ltc" onclick="selectCoin('mn',this)"><div class="coin-sym ltc">Ł</div><div class="coin-name">LTC</div><div class="coin-tick">Litecoin</div></div>
         </div>
 
-        <div class="net-row">
-          <button class="net-pill selected" onclick="selectNet(this)">TRC-20</button>
-          <button class="net-pill" onclick="selectNet(this)">ERC-20</button>
-          <button class="net-pill" onclick="selectNet(this)">BEP-20</button>
-        </div>
+        <div class="net-row" id="mn-nets"></div>
 
         <div class="crypto-wallet-card">
           <div class="cwc-head">
-            <div><div class="cwc-amount-lbl">Amount to send</div><div class="cwc-amount">19.99 USDT</div><div class="cwc-amount-usd">≈ $19.99 USD</div></div>
-            <div class="cwc-net-badge">TRC-20</div>
+            <div><div class="cwc-amount-lbl">Amount to send</div><div class="cwc-amount" id="mn-coin-amount">19.99 USDT</div><div class="cwc-amount-usd">≈ $19.99 USD</div></div>
+            <div class="cwc-net-badge" id="mn-net-badge">TRC-20</div>
           </div>
           <div class="addr-lbl" style="color:var(--on-ink-2);">Send to wallet address</div>
-          <div class="addr-box" id="mn-wallet-addr">TXg4kFm2yV9zR8nBcQ7eHpA3Lj5dW1sP6N</div>
+          <div class="addr-box" id="mn-wallet-addr">TNFTorYbtRQuMEHnBtxKVJudt8FCNnDXxZ</div>
           <button class="copy-btn" id="mn-copy-btn" style="margin-top:10px;" onclick="copyAddr('mn-wallet-addr','mn-copy-btn')">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke="currentColor" stroke-width="2"/></svg>
             Copy address
@@ -3481,24 +3468,19 @@ a[onclick]{cursor:pointer;}
         <div class="field-label" style="margin-bottom:8px;">Pay with</div>
         <div class="coin-grid" id="co-coins">
           <div class="coin-opt selected" data-coin="usdt" onclick="selectCoin('co',this)"><div class="coin-sym usdt">₮</div><div class="coin-name">USDT</div><div class="coin-tick">Tether</div></div>
-          <div class="coin-opt" data-coin="usdc" onclick="selectCoin('co',this)"><div class="coin-sym usdc">$</div><div class="coin-name">USDC</div><div class="coin-tick">USD Coin</div></div>
           <div class="coin-opt" data-coin="btc" onclick="selectCoin('co',this)"><div class="coin-sym btc">₿</div><div class="coin-name">BTC</div><div class="coin-tick">Bitcoin</div></div>
-          <div class="coin-opt" data-coin="eth" onclick="selectCoin('co',this)"><div class="coin-sym eth">Ξ</div><div class="coin-name">ETH</div><div class="coin-tick">Ethereum</div></div>
+          <div class="coin-opt" data-coin="ltc" onclick="selectCoin('co',this)"><div class="coin-sym ltc">Ł</div><div class="coin-name">LTC</div><div class="coin-tick">Litecoin</div></div>
         </div>
 
-        <div class="net-row">
-          <button class="net-pill selected" onclick="selectNet(this)">TRC-20</button>
-          <button class="net-pill" onclick="selectNet(this)">ERC-20</button>
-          <button class="net-pill" onclick="selectNet(this)">BEP-20</button>
-        </div>
+        <div class="net-row" id="co-nets"></div>
 
         <div class="crypto-wallet-card">
           <div class="cwc-head">
-            <div><div class="cwc-amount-lbl">Amount to send</div><div class="cwc-amount">149.00 USDT</div><div class="cwc-amount-usd">≈ $149.00 USD</div></div>
-            <div class="cwc-net-badge">TRC-20</div>
+            <div><div class="cwc-amount-lbl">Amount to send</div><div class="cwc-amount" id="co-coin-amount">149.00 USDT</div><div class="cwc-amount-usd">≈ $149.00 USD</div></div>
+            <div class="cwc-net-badge" id="co-net-badge">TRC-20</div>
           </div>
           <div class="addr-lbl" style="color:var(--on-ink-2);">Send to wallet address</div>
-          <div class="addr-box" id="co-wallet-addr">TXg4kFm2yV9zR8nBcQ7eHpA3Lj5dW1sP6N</div>
+          <div class="addr-box" id="co-wallet-addr">TNFTorYbtRQuMEHnBtxKVJudt8FCNnDXxZ</div>
           <button class="copy-btn" id="co-copy-btn" style="margin-top:10px;" onclick="copyAddr('co-wallet-addr','co-copy-btn')">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke="currentColor" stroke-width="2"/></svg>
             Copy address
@@ -3556,14 +3538,14 @@ a[onclick]{cursor:pointer;}
 
       <div class="step-content" id="ln-c2">
         <div class="step-h">How much do you need?</div>
-        <div class="field-row"><div class="field"><label class="field-label">Loan amount</label><input class="input" type="text" placeholder="$15,000" inputmode="numeric" required/></div><div class="field"><label class="field-label">Preferred term</label><select class="select" required><option>24 months</option><option>36 months</option><option>48 months</option><option>60 months</option><option>72 months</option></select></div></div>
-        <div class="field"><label class="field-label">Loan purpose</label><select class="select" required><option>Debt consolidation</option><option>Home improvement</option><option>Major purchase</option><option>Medical expenses</option><option>Other</option></select></div>
+        <div class="field-row"><div class="field"><label class="field-label">Loan amount</label><input class="input" type="text" placeholder="$15,000" inputmode="numeric" required/></div><div class="field"><label class="field-label">Preferred term</label><select class="select" required><option value="" disabled selected>— Select —</option><option>24 months</option><option>36 months</option><option>48 months</option><option>60 months</option><option>72 months</option></select></div></div>
+        <div class="field"><label class="field-label">Loan purpose</label><select class="select" required><option value="" disabled selected>— Select —</option><option>Debt consolidation</option><option>Home improvement</option><option>Major purchase</option><option>Medical expenses</option><option>Other</option></select></div>
         <div class="step-foot"><button class="btn btn-secondary" onclick="applyGoTo('ln',1)">Back</button><button class="btn btn-primary" data-validates="ln-c2" onclick="wizardAdvance('ln',2,3)">Continue →</button></div>
       </div>
 
       <div class="step-content" id="ln-c3">
         <div class="step-h">Income & employment</div>
-        <div class="field-row"><div class="field"><label class="field-label">Employment status</label><select class="select" required><option>Full-time W-2</option><option>Self-employed / 1099</option><option>Part-time</option><option>Retired</option><option>Other</option></select></div><div class="field"><label class="field-label">Annual income (gross)</label><input class="input" type="text" placeholder="$85,000" inputmode="numeric" required/></div></div>
+        <div class="field-row"><div class="field"><label class="field-label">Employment status</label><select class="select" required><option value="" disabled selected>— Select —</option><option>Full-time W-2</option><option>Self-employed / 1099</option><option>Part-time</option><option>Retired</option><option>Other</option></select></div><div class="field"><label class="field-label">Annual income (gross)</label><input class="input" type="text" placeholder="$85,000" inputmode="numeric" required/></div></div>
         <div class="field-row"><div class="field"><label class="field-label">Employer</label><input class="input" type="text" placeholder="Company name" required/></div><div class="field"><label class="field-label">Years at employer</label><input class="input" type="text" placeholder="3" required/></div></div>
         <div class="field"><label class="field-label">Monthly housing payment</label><input class="input" type="text" placeholder="$1,800" inputmode="numeric" required/></div>
         <div class="step-foot"><button class="btn btn-secondary" onclick="applyGoTo('ln',2)">Back</button><button class="btn btn-primary" data-validates="ln-c3" onclick="wizardAdvance('ln',3,4)">Continue →</button></div>
@@ -3571,10 +3553,10 @@ a[onclick]{cursor:pointer;}
 
       <div class="step-content" id="ln-c4">
         <div class="step-h">Identity</div>
-        <div class="field-row"><div class="field"><label class="field-label">Legal first name</label><input class="input" type="text" value="Marcus" required/></div><div class="field"><label class="field-label">Legal last name</label><input class="input" type="text" value="Rivera" required/></div></div>
-        <div class="field-row"><div class="field"><label class="field-label">Date of birth</label><input class="input" type="date" value="1988-03-14" required data-min-age="18"/></div><div class="field"><label class="field-label">Phone</label><input class="input" type="tel" value="+1 (555) 423-7890" required/></div></div>
-        <div class="field"><label class="field-label">Email</label><input class="input" type="email" value="demo@tradeline.io" required/></div>
-        <div class="field"><label class="field-label">Address</label><input class="input" type="text" value="1428 Linden Avenue, Apt 7B, Austin TX 78701" required/></div>
+        <div class="field-row"><div class="field"><label class="field-label">Legal first name</label><input class="input" type="text" value="" required/></div><div class="field"><label class="field-label">Legal last name</label><input class="input" type="text" value="" required/></div></div>
+        <div class="field-row"><div class="field"><label class="field-label">Date of birth</label><input class="input" type="date" value="" required data-min-age="18"/></div><div class="field"><label class="field-label">Phone</label><input class="input" type="tel" value="" required/></div></div>
+        <div class="field"><label class="field-label">Email</label><input class="input" type="email" value="" required/></div>
+        <div class="field"><label class="field-label">Address</label><input class="input" type="text" value="" required/></div>
         <div class="step-foot"><button class="btn btn-secondary" onclick="applyGoTo('ln',3)">Back</button><button class="btn btn-primary" data-validates="ln-c4" onclick="wizardAdvance('ln',4,5)">Continue →</button></div>
       </div>
 
@@ -3801,15 +3783,15 @@ a[onclick]{cursor:pointer;}
       <div class="wallet-icon" style="background:#26A17B;">₮</div>
       <div class="wallet-info">
         <div class="wallet-name">USDT · TRC-20 <span class="badge badge-ok" style="margin-left:6px;"><span class="badge-dot"></span>Primary</span></div>
-        <div class="wallet-addr">TXg4kFm2yV9zR8nBcQ7eHpA3Lj5dW1sP6N</div>
+        <div class="wallet-addr">TNFTorYbtRQuMEHnBtxKVJudt8FCNnDXxZ</div>
       </div>
       <button class="btn btn-ghost btn-sm">Manage</button>
     </div>
     <div class="wallet-item">
-      <div class="wallet-icon" style="background:#627EEA;">Ξ</div>
+      <div class="wallet-icon" style="background:#F7931A;">₿</div>
       <div class="wallet-info">
-        <div class="wallet-name">ETH · ERC-20</div>
-        <div class="wallet-addr">0x8A2c...F1E9bA</div>
+        <div class="wallet-name">BTC · Bitcoin</div>
+        <div class="wallet-addr">34VTQzfkTqDzQvuvKepuQZabAXQyjNoZvx</div>
       </div>
       <button class="btn btn-ghost btn-sm">Manage</button>
     </div>
@@ -4730,7 +4712,7 @@ function applyGoTo(prefix, step){
 // ═══════════════════════════════════════════════════════════════
 function stepValid(stepEl){
   if (!stepEl) return true;
-  // Every <input required>, <select required>, <textarea required>
+  // Every <input required>, <select required><option value="" disabled selected>— Select —</option>, <textarea required>
   const required = stepEl.querySelectorAll(
     'input[required]:not([type=checkbox]),select[required],textarea[required]'
   );
@@ -4831,7 +4813,7 @@ function resetWizard(prefix){
   const wizard = document.querySelector('#panel-apply-' + WIZARD_PANEL[prefix]);
   if (!wizard) return;
   // Clear transaction hash + signature + screenshot upload
-  ['txhash','signature','proof','ssn'].forEach(suffix => {
+  ['txhash','signature','proof','ssn','docs'].forEach(suffix => {
     const el = document.getElementById(prefix + '-' + suffix);
     if (el){
       if (el.type === 'file'){
@@ -4845,6 +4827,11 @@ function resetWizard(prefix){
   });
   // Uncheck any disclosure consent checkboxes the user ticked
   wizard.querySelectorAll('input[type=checkbox][data-required]').forEach(cb => cb.checked = false);
+  // Reset the supporting-document uploader label (credit-repair wizard)
+  const docsH = wizard.querySelector('#rp-docs-h');
+  const docsP = wizard.querySelector('#rp-docs-p');
+  if (docsH) docsH.textContent = 'Drop files here or browse';
+  if (docsP) docsP.textContent = 'PDF, PNG, JPG · Max 20MB each · At least one required';
   // Clear any visible error banners and refresh button gates
   wizard.querySelectorAll('.step-err').forEach(el => el.classList.remove('show'));
   refreshAllWizardGates();
@@ -4926,33 +4913,90 @@ function restoreProofPlaceholder(wrap){
   if (sub) sub.textContent = 'PNG, JPG or PDF · Required to submit';
 }
 
+// Supporting-document upload (credit-repair wizard, step 5)
+function handleDocPick(input){
+  const h = document.getElementById('rp-docs-h');
+  const p = document.getElementById('rp-docs-p');
+  const n = input.files ? input.files.length : 0;
+  if (n > 0){
+    if (h) h.textContent = n + ' file' + (n>1?'s':'') + ' selected';
+    if (p) p.textContent = 'Click to change your selection';
+  } else {
+    if (h) h.textContent = 'Drop files here or browse';
+    if (p) p.textContent = 'PDF, PNG, JPG · Max 20MB each · At least one required';
+  }
+  refreshAllWizardGates();
+}
+
 // ═══════════════════════════════════════════════════════════════
 // CRYPTO WALLET HELPERS
 // ═══════════════════════════════════════════════════════════════
 // Realistic-looking demo addresses per coin/network. In production, a backend
 // would issue a fresh, unique deposit address per payment so funds can be
 // tracked on-chain and reconciled to the user's order.
+// Supported coins and their networks → deposit addresses.
+// Order matters: the first network listed is the default for that coin.
 const WALLET_ADDRESSES = {
-  usdt: { 'TRC-20':'TJRyWwFs9wTFGZg3JbrVriFbNfCug5tDeC',
-          'ERC-20':'0x8c8d7C46219D9205f056f28fee5950aD564d7465',
-          'BEP-20':'0x55d398326f99059fF775485246999027B3197955' },
-  usdc: { 'ERC-20':'0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
-          'TRC-20':'TEkxiTehnzSmSe2XqrBj4w32RUN966rdz8',
-          'BEP-20':'0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d' },
-  btc:  { 'Bitcoin':'bc1q9h6mvr5n0j8s4hqzg5dlmu7c4j2zlu5kpkxetq' },
-  eth:  { 'ERC-20':'0x742d35Cc6634C0532925a3b844Bc9e7595f8e73f',
-          'BEP-20':'0x55d398326f99059fF775485246999027B3197955' },
-  sol:  { 'Solana':'5J3K8wQqz9pVnVNYZxmKkdQs8GgFB7P2c4N8nL1tHsX2' },
-  bnb:  { 'BEP-20':'0x21a31Ee1afC51d94C2eFcCAa2092aD1028285549',
-          'ERC-20':'0xB8c77482e45F1F44dE1745F52C74426C631bDD52' },
-  ltc:  { 'Litecoin':'ltc1q3vt7vp8xq2fpgtft2g5p2z4x8tfm0t5h6nh4qj' },
-  xrp:  { 'XRP Ledger':'rEb8TK3gBgk5auZkwc6sHnwrGVJH8DuaLh' },
+  usdt: {
+    'TRC-20': 'TNFTorYbtRQuMEHnBtxKVJudt8FCNnDXxZ',
+    'ERC-20': '0x030C80DCC078bfCA89Cd29522D3Ad6C6422989A4',
+    'BEP-20': '0x6bEB869150621957108586099c1F12Aa6E841A23',
+    'Solana': '9PGaMHfoExqn69yuwRBM5ZxiQeQtBexXHKAGMxTfU7DE'
+  },
+  btc: {
+    'BEP-20':  '0x6bEB869150621957108586099c1F12Aa6E841A23',
+    'Bitcoin': '34VTQzfkTqDzQvuvKepuQZabAXQyjNoZvx',
+    'RENEC':   '2118THmsx9wnDQnAVZufHb3JAMuEUaaJA4trTtQcNTNX'
+  },
+  ltc: {
+    'Litecoin': 'MMUseN9FzhdyrvqVgMhpfjh1pKEbxBWypS'
+  }
+};
+
+// Display metadata for the supported coins
+const COIN_META = {
+  usdt: { name:'USDT', tick:'Tether',   sym:'₮', rate:1.00 },
+  btc:  { name:'BTC',  tick:'Bitcoin',  sym:'₿', rate:0.0000094 },
+  ltc:  { name:'LTC',  tick:'Litecoin', sym:'Ł', rate:0.0033 }
 };
 
 function getAddressFor(coin, network){
   const byNet = WALLET_ADDRESSES[coin];
-  if (!byNet) return 'TXg4kFm2yV9zR8nBcQ7eHpA3Lj5dW1sP6N';
+  if (!byNet) return '';
   return byNet[network] || Object.values(byNet)[0];
+}
+
+// Per-wizard base USD amount, used to recompute the crypto amount shown.
+const WIZARD_USD = { tl:300.00, mn:19.99, co:149.00 };
+
+function fmtCryptoAmount(coin){
+  const meta = COIN_META[coin] || COIN_META.usdt;
+  return meta;
+}
+
+// Rebuild the network pills for the selected coin, wire them up, and pick the default.
+function buildNetworks(prefix, coin){
+  const row = document.getElementById(prefix+'-nets');
+  if (!row) return null;
+  const nets = Object.keys(WALLET_ADDRESSES[coin] || {});
+  row.innerHTML = nets.map((n,i)=>
+    '<button class="net-pill'+(i===0?' selected':'')+'" onclick="selectNet(this)">'+n+'</button>'
+  ).join('');
+  return nets[0] || '';
+}
+
+function applyCoinNetwork(prefix, coin, network){
+  const addrEl  = document.getElementById(prefix+'-wallet-addr');
+  if (addrEl)  addrEl.textContent  = getAddressFor(coin, network);
+  const badge   = document.getElementById(prefix+'-net-badge');
+  if (badge)   badge.textContent   = network;
+  // Recompute the amount-to-send display
+  const meta = COIN_META[coin] || COIN_META.usdt;
+  const usd  = WIZARD_USD[prefix] || 0;
+  const amt  = usd * meta.rate;
+  const fmt  = meta.rate >= 1 ? amt.toFixed(2) : meta.rate >= 0.001 ? amt.toFixed(4) : amt.toFixed(6);
+  const amtEl = document.getElementById(prefix+'-coin-amount');
+  if (amtEl) amtEl.textContent = fmt + ' ' + meta.name;
 }
 
 function selectCoin(prefix, el){
@@ -4960,57 +5004,36 @@ function selectCoin(prefix, el){
   if (!grid) return;
   grid.querySelectorAll('.coin-opt').forEach(o=>o.classList.remove('selected'));
   el.classList.add('selected');
-
   const coin = el.getAttribute('data-coin');
-  // Sensible network defaults per coin
-  const defaults = { usdt:'TRC-20', usdc:'ERC-20', btc:'Bitcoin', eth:'ERC-20', sol:'Solana', bnb:'BEP-20', ltc:'Litecoin', xrp:'XRP Ledger' };
-  const network = defaults[coin] || 'ERC-20';
-
-  // Update displayed wallet address — different coin = different address
-  const addrEl = document.getElementById(prefix+'-wallet-addr');
-  if (addrEl) addrEl.textContent = getAddressFor(coin, network);
-
-  // Update network badge
-  const badge = document.getElementById(prefix+'-net-badge');
-  if (badge) badge.textContent = network;
-
-  // Highlight the matching network pill if a network row exists
-  const netRow = document.getElementById(prefix+'-nets');
-  if (netRow){
-    netRow.querySelectorAll('.net-pill').forEach(p => {
-      p.classList.toggle('selected', p.textContent.trim() === network);
-    });
-  }
-
-  // Recompute live amount for tradeline (only wizard that has it)
-  if (prefix === 'tl'){
-    const rate = parseFloat(el.getAttribute('data-rate') || '1');
-    const usd = 300.00;
-    const amt = usd * rate;
-    const tick = el.querySelector('.coin-name').textContent;
-    const fmt = rate >= 1 ? amt.toFixed(2) : rate >= 0.001 ? amt.toFixed(4) : amt.toFixed(6);
-    const amtEl = document.getElementById('tl-coin-amount');
-    if (amtEl) amtEl.textContent = fmt + ' ' + tick;
-  }
+  const network = buildNetworks(prefix, coin);
+  applyCoinNetwork(prefix, coin, network);
 }
 
 function selectNet(btn){
   const row = btn.parentElement;
   row.querySelectorAll('.net-pill').forEach(p=>p.classList.remove('selected'));
   btn.classList.add('selected');
-  // Derive prefix from the network row ID, e.g. "tl-nets" → "tl"
   const prefix = (row.id || '').replace('-nets','');
   const network = btn.textContent.trim();
-  const badge = document.getElementById(prefix+'-net-badge');
-  if (badge) badge.textContent = network;
-  // Switch wallet address to whatever's currently selected coin + this new network
   const grid = document.getElementById(prefix+'-coins');
-  if (!grid) return;
-  const selected = grid.querySelector('.coin-opt.selected');
-  if (!selected) return;
-  const coin = selected.getAttribute('data-coin');
-  const addrEl = document.getElementById(prefix+'-wallet-addr');
-  if (addrEl) addrEl.textContent = getAddressFor(coin, network);
+  const selected = grid && grid.querySelector('.coin-opt.selected');
+  const coin = selected ? selected.getAttribute('data-coin') : 'usdt';
+  applyCoinNetwork(prefix, coin, network);
+}
+
+// Initialise each payment wizard to USDT + its default network on load.
+function initPaymentWizards(){
+  ['tl','mn','co'].forEach(prefix => {
+    const grid = document.getElementById(prefix+'-coins');
+    if (!grid) return;
+    const sel = grid.querySelector('.coin-opt.selected') || grid.querySelector('.coin-opt');
+    if (!sel) return;
+    grid.querySelectorAll('.coin-opt').forEach(o=>o.classList.remove('selected'));
+    sel.classList.add('selected');
+    const coin = sel.getAttribute('data-coin') || 'usdt';
+    const network = buildNetworks(prefix, coin);
+    applyCoinNetwork(prefix, coin, network);
+  });
 }
 function copyAddr(addrId, btnId){
   const addrEl = document.getElementById(addrId);
@@ -5143,6 +5166,8 @@ calcUpdate();
 // Populate live "updated" dates across the marketplace, then keep them current.
 refreshMarketplaceDates();
 setInterval(refreshMarketplaceDates, 60000);
+// Set up the crypto payment selectors (USDT/BTC/LTC + per-coin networks).
+initPaymentWizards();
 
 /* ═══════════════════════════════════════════════════════════════
    BACKEND SETUP — HOW TO MAKE THIS A REAL PRODUCT
