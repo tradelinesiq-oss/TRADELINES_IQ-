@@ -2760,6 +2760,18 @@ a[onclick]{cursor:pointer;}
         <span class="badge badge-bronze">Free</span>
       </div>
     </div>
+
+    <div class="apply-hub-card svc-monitor" onclick="openApplyFlow('rentreporting')">
+      <div class="apply-hub-head">
+        <div class="apply-hub-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 11l9-8 9 8" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M5 10v10a1 1 0 001 1h12a1 1 0 001-1V10" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
+        <div><h3>Rent &amp; Bill Reporting</h3><div class="sub">5 steps · ~6 minutes</div></div>
+      </div>
+      <div class="apply-hub-desc">Turn on-time rent and utility payments into credit history. We report your payments to the bureaus to help build your score — up to 24 months of past rent.</div>
+      <div class="apply-hub-meta">
+        <span class="apply-hub-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>No credit pull</span>
+        <span class="badge badge-bronze">$9.95 / mo</span>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -2840,9 +2852,9 @@ a[onclick]{cursor:pointer;}
       </table>
     </div>
     <div class="tl-cards">
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Auto Loan</div><div class="tl-sub">Primary — BOA</div></div><span class="tl-price">$199</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$35,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$18,200</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">52%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">4y 3mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">15th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Mortgage</div><div class="tl-sub">Primary — BOA</div></div><span class="tl-price">$299</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$420,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$398,000</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">95%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">6y 1mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">1st</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Platinum Plus Credit Card</div><div class="tl-sub">Revolving — BOA</div></div><span class="tl-price">$249</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$18,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$2,100</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">12%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">5y 8mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">22nd</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Auto Loan</div><div class="tl-sub">Primary — BOA</div></div><span class="tl-price">$199</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$35,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$18,200</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">52%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">4y 3mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">15th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Mortgage</div><div class="tl-sub">Primary — BOA</div></div><span class="tl-price">$299</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$420,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$398,000</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">95%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">6y 1mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">1st</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Platinum Plus Credit Card</div><div class="tl-sub">Revolving — BOA</div></div><span class="tl-price">$249</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$18,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$2,100</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">12%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">5y 8mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">22nd</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
     </div>
   </div>
 
@@ -2879,8 +2891,8 @@ a[onclick]{cursor:pointer;}
       </table>
     </div>
     <div class="tl-cards">
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Citi Double Cash</div><div class="tl-sub">Revolving — Citi</div></div><span class="tl-price">$219</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$8,500</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$4,250</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">50%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">3y 2mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">28th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Citi Custom Cash</div><div class="tl-sub">Revolving — Citi</div></div><span class="tl-price">$199</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$12,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$950</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">8%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">2y 7mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">10th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Citi Double Cash</div><div class="tl-sub">Revolving — Citi</div></div><span class="tl-price">$219</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$8,500</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$4,250</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">50%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">3y 2mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">28th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Citi Custom Cash</div><div class="tl-sub">Revolving — Citi</div></div><span class="tl-price">$199</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$12,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$950</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">8%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">2y 7mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">10th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
     </div>
   </div>
 
@@ -2925,9 +2937,9 @@ a[onclick]{cursor:pointer;}
       </table>
     </div>
     <div class="tl-cards">
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Chase Primary Client Visa</div><div class="tl-sub">Revolving — Chase</div></div><span class="tl-price">$300</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$30,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$1,800</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">6%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">8y 2mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">3rd</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Chase Sapphire Reserve Visa</div><div class="tl-sub">Revolving — Chase</div></div><span class="tl-price">$285</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$25,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$3,200</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">13%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">6y 5mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">12th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Chase Freedom Unlimited Visa</div><div class="tl-sub">Revolving — Chase</div></div><span class="tl-price">$249</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$15,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$750</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">5%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">5y</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">27th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Chase Primary Client Visa</div><div class="tl-sub">Revolving — Chase</div></div><span class="tl-price">$300</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$30,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$1,800</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">6%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">8y 2mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">3rd</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Chase Sapphire Reserve Visa</div><div class="tl-sub">Revolving — Chase</div></div><span class="tl-price">$285</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$25,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$3,200</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">13%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">6y 5mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">12th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Chase Freedom Unlimited Visa</div><div class="tl-sub">Revolving — Chase</div></div><span class="tl-price">$249</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$15,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$750</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">5%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">5y</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">27th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
     </div>
   </div>
 
@@ -2964,8 +2976,8 @@ a[onclick]{cursor:pointer;}
       </table>
     </div>
     <div class="tl-cards">
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Amex Gold Card</div><div class="tl-sub">Revolving — Amex</div></div><span class="tl-price">$275</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$22,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$1,540</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">7%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">6y</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">7th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Amex Blue Cash</div><div class="tl-sub">Revolving — Amex</div></div><span class="tl-price">$249</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$16,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$3,200</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">20%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">4y 4mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">18th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Amex Gold Card</div><div class="tl-sub">Revolving — Amex</div></div><span class="tl-price">$275</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$22,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$1,540</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">7%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">6y</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">7th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Amex Blue Cash</div><div class="tl-sub">Revolving — Amex</div></div><span class="tl-price">$249</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$16,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$3,200</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">20%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">4y 4mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">18th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
     </div>
   </div>
 
@@ -3003,8 +3015,8 @@ a[onclick]{cursor:pointer;}
       </table>
     </div>
     <div class="tl-cards">
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Barclays Arrival+</div><div class="tl-sub">Revolving — Barclays</div></div><span class="tl-price">$229</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$14,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$1,680</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">12%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">4y 5mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">5th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Barclays Rewards</div><div class="tl-sub">Revolving — Barclays</div></div><span class="tl-price">$189</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$9,500</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$475</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">5%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">3y 1mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">19th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Barclays Arrival+</div><div class="tl-sub">Revolving — Barclays</div></div><span class="tl-price">$229</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$14,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$1,680</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">12%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">4y 5mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">5th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Barclays Rewards</div><div class="tl-sub">Revolving — Barclays</div></div><span class="tl-price">$189</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$9,500</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$475</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">5%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">3y 1mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">19th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
     </div>
   </div>
 
@@ -3041,8 +3053,8 @@ a[onclick]{cursor:pointer;}
       </table>
     </div>
     <div class="tl-cards">
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Discover It Cash Back</div><div class="tl-sub">Revolving — Discover</div></div><span class="tl-price">$209</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$12,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$0</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">0%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">3y 9mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">14th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Discover It Miles</div><div class="tl-sub">Revolving — Discover</div></div><span class="tl-price">$179</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$7,500</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$600</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">8%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">2y</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">25th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Discover It Cash Back</div><div class="tl-sub">Revolving — Discover</div></div><span class="tl-price">$209</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$12,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$0</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">0%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">3y 9mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">14th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Discover It Miles</div><div class="tl-sub">Revolving — Discover</div></div><span class="tl-price">$179</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Limit</div><div class="val">$7,500</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$600</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">8%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">2y</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">25th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
     </div>
   </div>
 
@@ -3087,9 +3099,9 @@ a[onclick]{cursor:pointer;}
       </table>
     </div>
     <div class="tl-cards">
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Toyota Financial Auto</div><div class="tl-sub">Installment — Auto</div></div><span class="tl-price">$279</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Original</div><div class="val">$42,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$28,400</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">68%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">3y 6mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">2nd</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Capital One Auto</div><div class="tl-sub">Installment — Auto</div></div><span class="tl-price">$259</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Original</div><div class="val">$28,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$14,400</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">51%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">4y</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">20th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
-      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Wells Fargo Auto</div><div class="tl-sub">Installment — Auto</div></div><span class="tl-price">$269</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Original</div><div class="val">$35,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$8,750</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">25%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">5y 2mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">9th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="openApplyFlow('tradeline')">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Toyota Financial Auto</div><div class="tl-sub">Installment — Auto</div></div><span class="tl-price">$279</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Original</div><div class="val">$42,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$28,400</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">68%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">3y 6mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">2nd</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Capital One Auto</div><div class="tl-sub">Installment — Auto</div></div><span class="tl-price">$259</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Original</div><div class="val">$28,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$14,400</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">51%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">4y</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">20th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
+      <div class="tl-card"><div class="tl-card-head"><div><div class="tl-product">Wells Fargo Auto</div><div class="tl-sub">Installment — Auto</div></div><span class="tl-price">$269</span></div><div class="tl-card-meta"><div class="tl-card-cell"><div class="lbl">Original</div><div class="val">$35,000</div></div><div class="tl-card-cell"><div class="lbl">Balance</div><div class="val">$8,750</div></div><div class="tl-card-cell"><div class="lbl">Usage</div><div class="val">25%</div></div><div class="tl-card-cell"><div class="lbl">History</div><div class="val">5y 2mo</div></div><div class="tl-card-cell"><div class="lbl">Closing</div><div class="val">9th</div></div></div><button class="btn btn-bronze btn-sm btn-block" onclick="reserveTradeline(this)">Reserve slot →</button></div>
     </div>
   </div>
 </div>
@@ -3195,6 +3207,10 @@ a[onclick]{cursor:pointer;}
       <div class="step-content" id="tl-c4">
         <div class="step-h">Choose your tradeline</div>
         <div class="step-sub">Pick the slot that matches your credit goals. Each one is pre-vetted for clean payment history.</div>
+        <div id="tl-selected-banner" style="display:none;align-items:center;gap:10px;padding:12px 16px;margin-bottom:14px;background:var(--bronze-soft);border:1px solid var(--bronze);border-radius:var(--r-md);font-size:13.5px;color:var(--bronze-deep);">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span id="tl-selected-banner-text"></span>
+        </div>
         <div class="tl-pick-grid">
           <div class="tl-pick selected" onclick="selectTL(this)"><div class="tl-pick-bank">Chase</div><div class="tl-pick-name">Sapphire Reserve</div><div class="tl-pick-meta">$25,000 limit · 6y 5mo · 13% util</div><div class="tl-pick-price">$285 / slot</div></div>
           <div class="tl-pick" onclick="selectTL(this)"><div class="tl-pick-bank">Amex</div><div class="tl-pick-name">Gold Card</div><div class="tl-pick-meta">$22,000 limit · 6y · 7% util</div><div class="tl-pick-price">$275 / slot</div></div>
@@ -3257,7 +3273,7 @@ a[onclick]{cursor:pointer;}
             <div>
               <div class="cwc-amount-lbl">Amount to send</div>
               <div class="cwc-amount" id="tl-coin-amount">300.00 USDT</div>
-              <div class="cwc-amount-usd">≈ $300.00 USD</div>
+              <div class="cwc-amount-usd" id="tl-coin-usd">≈ $300.00 USD</div>
             </div>
             <div class="cwc-net-badge" id="tl-net-badge">TRC-20</div>
           </div>
@@ -3839,6 +3855,100 @@ a[onclick]{cursor:pointer;}
   <div id="track-list"></div>
 </div>
 
+<!-- ── APPLY: RENT & BILL REPORTING ── -->
+<div id="panel-apply-rentreporting" class="panel">
+  <div class="wizard svc-monitor">
+    <div class="wizard-head">
+      <a class="wizard-back" onclick="switchPanel('apply-hub',null)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>All applications</a>
+      <h1>Rent &amp; Bill <em>Reporting.</em></h1>
+      <div class="sub">Report on-time rent and utility payments to the bureaus to build credit history.</div>
+    </div>
+
+    <div class="stepper">
+      <div class="stp active" id="rr-step1"><div class="stp-num">01</div><div class="stp-label">Overview</div></div>
+      <div class="stp" id="rr-step2"><div class="stp-num">02</div><div class="stp-label">Rent details</div></div>
+      <div class="stp" id="rr-step3"><div class="stp-num">03</div><div class="stp-label">Identity</div></div>
+      <div class="stp" id="rr-step4"><div class="stp-num">04</div><div class="stp-label">Verify</div></div>
+      <div class="stp" id="rr-step5"><div class="stp-num">05</div><div class="stp-label">Done</div></div>
+    </div>
+
+    <div class="wizard-body">
+      <!-- Step 1 -->
+      <div class="step-content active" id="rr-c1">
+        <div class="step-h">How rent reporting works</div>
+        <div class="step-sub">Your rent is likely your largest monthly payment — but it usually doesn't count toward your credit. We change that.</div>
+        <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:18px;">
+          <div style="display:flex;gap:14px;padding:14px;background:var(--surface-tint);border-radius:var(--r-md);"><div style="font-family:var(--serif);font-style:italic;font-size:28px;color:var(--tone-deep);line-height:1;flex-shrink:0;">01</div><div><strong>Tell us about your lease.</strong> Your monthly rent, who you pay, and how long you've been paying.</div></div>
+          <div style="display:flex;gap:14px;padding:14px;background:var(--surface-tint);border-radius:var(--r-md);"><div style="font-family:var(--serif);font-style:italic;font-size:28px;color:var(--tone-deep);line-height:1;flex-shrink:0;">02</div><div><strong>We verify and report.</strong> On-time payments are reported to the bureaus — plus up to 24 months of past rent.</div></div>
+          <div style="display:flex;gap:14px;padding:14px;background:var(--surface-tint);border-radius:var(--r-md);"><div style="font-family:var(--serif);font-style:italic;font-size:28px;color:var(--tone-deep);line-height:1;flex-shrink:0;">03</div><div><strong>Watch your history grow.</strong> A new positive tradeline, with no credit pull to enroll. $9.95/month, cancel anytime.</div></div>
+        </div>
+        <div class="step-foot">
+          <button class="btn btn-secondary" onclick="switchPanel('apply-hub',null)">Cancel</button>
+          <button class="btn btn-primary" onclick="applyGoTo('rr',2)">Continue →</button>
+        </div>
+      </div>
+
+      <!-- Step 2: Rent details -->
+      <div class="step-content" id="rr-c2">
+        <div class="step-h">Your rent</div>
+        <div class="step-sub">We use this to set up your reporting tradeline.</div>
+        <div class="field-row">
+          <div class="field"><label class="field-label">Monthly rent</label><input class="input" type="text" id="rr-rent" placeholder="$1,500" inputmode="numeric" required/></div>
+          <div class="field"><label class="field-label">Lease start date</label><input class="input" type="date" id="rr-leasestart" required/></div>
+        </div>
+        <div class="field"><label class="field-label">Landlord / property manager name</label><input class="input" type="text" id="rr-landlord" placeholder="e.g. Linden Park Apartments" required/></div>
+        <div class="field-row">
+          <div class="field"><label class="field-label">How do you pay rent?</label><select class="select" id="rr-method" required><option value="" disabled selected>— Select —</option><option>Bank transfer / ACH</option><option>Check</option><option>Online portal</option><option>Card</option><option>Cash</option></select></div>
+          <div class="field"><label class="field-label">Report past rent?</label><select class="select" id="rr-backreport" required><option value="" disabled selected>— Select —</option><option>No, start from now</option><option>Last 6 months</option><option>Last 12 months</option><option>Last 24 months</option></select></div>
+        </div>
+        <div class="step-foot">
+          <button class="btn btn-secondary" onclick="applyGoTo('rr',1)">Back</button>
+          <button class="btn btn-primary" id="rr-c2-next" data-validates="rr-c2" disabled onclick="wizardAdvance('rr',2,3)">Continue →</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Identity -->
+      <div class="step-content" id="rr-c3">
+        <div class="step-h">Your details</div>
+        <div class="step-sub">This must match the name on your lease.</div>
+        <div class="field-row"><div class="field"><label class="field-label">Legal first name</label><input class="input" type="text" id="rr-fname" required/></div><div class="field"><label class="field-label">Legal last name</label><input class="input" type="text" id="rr-lname" required/></div></div>
+        <div class="field-row"><div class="field"><label class="field-label">Date of birth</label><input class="input" type="date" id="rr-dob" required data-min-age="18"/></div><div class="field"><label class="field-label">Phone</label><input class="input" type="tel" id="rr-phone" required/></div></div>
+        <div class="field"><label class="field-label">Email</label><input class="input" type="email" id="rr-email" required/></div>
+        <div class="field-row"><div class="field"><label class="field-label">Rental address</label><input class="input" type="text" id="rr-address" required/></div><div class="field"><label class="field-label">State</label><select class="select" id="rr-state" required><option value="" disabled selected>— Select —</option><option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>District of Columbia</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option></select></div></div>
+        <div class="step-foot">
+          <button class="btn btn-secondary" onclick="applyGoTo('rr',2)">Back</button>
+          <button class="btn btn-primary" id="rr-c3-next" data-validates="rr-c3" disabled onclick="wizardAdvance('rr',3,4)">Continue →</button>
+        </div>
+      </div>
+
+      <!-- Step 4: Verify & consent -->
+      <div class="step-content" id="rr-c4">
+        <div class="step-h">Verification &amp; consent</div>
+        <div class="step-sub">Confirm and submit to activate rent reporting.</div>
+        <div class="shield-note"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 6v6c0 5 3 9 9 11 6-2 9-6 9-11V6l-9-4z" stroke="currentColor" stroke-width="2"/></svg><span>We verify your lease and payment history before reporting. Only on-time payments you authorize are reported.</span></div>
+        <label class="check mt-3"><input type="checkbox" id="rr-consent-1" data-required/><span>I authorize TradelineIQ to report my rent and bill payment history to the credit bureaus.</span></label>
+        <label class="check"><input type="checkbox" id="rr-consent-2" data-required/><span>I confirm the information provided is accurate and matches my lease, and that I rent a residence in the United States.</span></label>
+        <div class="field mt-3"><label class="field-label">Electronic signature <span class="opt">Type your full legal name</span></label><input class="input" type="text" id="rr-signature" required placeholder="Your full legal name" style="font-family:var(--serif);font-size:18px;font-style:italic;"/></div>
+        <div class="field-err step-err" id="rr-c4-err" style="margin-top:8px;">Please authorize, confirm, and sign to activate reporting.</div>
+        <div class="step-foot">
+          <button class="btn btn-secondary" onclick="applyGoTo('rr',3)">Back</button>
+          <button class="btn btn-bronze" data-validates="rr-c4" disabled onclick="submitApplication('rr')">Activate rent reporting →</button>
+        </div>
+      </div>
+
+      <!-- Step 5: Done -->
+      <div class="step-content" id="rr-c5">
+        <div class="modal-icon" style="margin:0 auto 18px;"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+        <div class="text-c">
+          <div class="step-h">Rent reporting activated</div>
+          <div class="step-sub" style="max-width:480px;margin:0 auto 18px;">We're verifying your lease now. Your first payment will report within 72 hours, and any past rent you selected will be added once verified. Track progress any time.</div>
+          <button class="btn btn-primary" onclick="switchPanel('tracking',null)">Track my application →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- ── CALCULATOR PANEL ── -->
 <div id="panel-calculator" class="panel svc-boost">
   <div class="panel-head">
@@ -4161,20 +4271,6 @@ a[onclick]{cursor:pointer;}
       <p>You have a right to obtain a copy of your credit report from a credit bureau. You may be charged a reasonable fee. There is no fee, however, if you have been turned down for credit, employment, insurance, or a rental dwelling because of information in your credit report within the preceding sixty days. The credit bureau must provide someone to help you interpret the information in your credit file. You are entitled to receive a free copy of your credit report if you are unemployed and intend to apply for employment in the next sixty days, if you are a recipient of public welfare assistance, or if you have reason to believe that there is inaccurate information in your credit report due to fraud.</p>
 
       <p>You have the right to sue a credit repair organization that violates the Credit Repair Organizations Act. This law prohibits deceptive practices by credit repair organizations.</p>
-
-      <h3>Your Right to Cancel</h3>
-      <p><strong>You have the right to cancel your contract with any credit repair organization for any reason within 3 business days from the date you signed it.</strong></p>
-
-      <h3>What TradelineIQ Promises — and Does Not Promise</h3>
-      <ul>
-        <li><strong>We do not guarantee any specific score outcome.</strong> Score changes depend on your existing credit file, the items being disputed or added, and bureau-specific scoring models.</li>
-        <li><strong>We will not request payment for credit repair services until those services have been performed.</strong> Per CROA § 1679b(b).</li>
-        <li><strong>We will not knowingly file a dispute we believe to be false or misleading.</strong> You confirm at signup that your dispute claims reflect a good-faith belief the information is inaccurate.</li>
-        <li><strong>We will provide you with a written contract</strong> before any service is performed, with a clear statement of the services to be performed, the total cost, a 3-day cancellation form, and your rights under CROA.</li>
-      </ul>
-
-      <h3>Authorized-User Tradelines — Special Notice</h3>
-      <p>AU tradelines are not credit-repair services and are not regulated under CROA. However, we apply the same transparency standards: no guaranteed outcomes, full disclosure of the service mechanics, and a 60-day reporting window with documented timelines. You should not use AU tradelines to misrepresent your finances on a current or pending mortgage or large loan application. Some lenders treat AU accounts less favorably during manual underwriting.</p>
 
       <h3>Contact</h3>
       <p>Questions about your rights or our practices: <strong>compliance@tradelineiq.example</strong> · Postal: TradelineIQ Compliance Office, P.O. Box [redacted], Austin, TX.</p>
@@ -5121,7 +5217,7 @@ function filterTradelines(q){
 // APPLICATION WIZARDS
 // ═══════════════════════════════════════════════════════════════
 function applyGoTo(prefix, step){
-  const maxes = { tl:7, rp:7, mn:5, co:4, ln:6, bf:6 };
+  const maxes = { tl:7, rp:7, mn:5, co:4, ln:6, bf:6, rr:5 };
   const max = maxes[prefix];
   for (let i=1; i<=max; i++){
     const c = document.getElementById(prefix+'-c'+i);
@@ -5230,10 +5326,68 @@ function selectTL(card){
   const name = card.querySelector('.tl-pick-name').textContent;
   const priceText = card.querySelector('.tl-pick-price').textContent;
   const price = parseFloat(priceText.replace(/[^0-9.]/g,''));
-  selectedTL = { name: bank+' '+name, price };
+  selectedTL = { name: bank+' '+name, price, fromMarketplace:false };
+  updateSelectedTradelineBanner();
+  // Keep the live payment amount in sync with the chosen slot price.
+  if (typeof initPaymentWizards === 'function') refreshTradelinePayment();
+}
+
+// Launched from a specific marketplace card — carry THAT tradeline into the
+// application so it stays selected through review and payment.
+function reserveTradeline(btn){
+  const card = btn.closest('.tl-card');
+  if (card){
+    const product = (card.querySelector('.tl-product')||{}).textContent || 'Selected tradeline';
+    const subEl = (card.querySelector('.tl-sub')||{}).textContent || '';
+    const priceText = (card.querySelector('.tl-price')||{}).textContent || '';
+    const price = parseFloat(priceText.replace(/[^0-9.]/g,'')) || 285;
+    selectedTL = { name: product.trim(), price, type: subEl.trim(), fromMarketplace:true };
+  }
+  openApplyFlow('tradeline');
+}
+
+// Reflect the current selectedTL in the step-4 grid + banner.
+function syncTradelineSelection(){
+  let matched = false;
+  document.querySelectorAll('#tl-c4 .tl-pick').forEach(p=>{
+    const bank = (p.querySelector('.tl-pick-bank')||{}).textContent || '';
+    const name = (p.querySelector('.tl-pick-name')||{}).textContent || '';
+    const full = (bank + ' ' + name).trim();
+    const isMatch = !!selectedTL && (selectedTL.name === full ||
+                    (name && selectedTL.name.toLowerCase().includes(name.toLowerCase())));
+    p.classList.toggle('selected', isMatch);
+    if (isMatch) matched = true;
+  });
+  // If the marketplace pick isn't one of the curated grid cards, clear grid
+  // highlights — the banner still shows what's carried into the application.
+  if (selectedTL && selectedTL.fromMarketplace && !matched){
+    document.querySelectorAll('#tl-c4 .tl-pick').forEach(p=>p.classList.remove('selected'));
+  }
+  updateSelectedTradelineBanner();
+  refreshTradelinePayment();
+}
+
+function updateSelectedTradelineBanner(){
+  const banner = document.getElementById('tl-selected-banner');
+  const text = document.getElementById('tl-selected-banner-text');
+  if (!banner || !text || !selectedTL) return;
+  text.innerHTML = 'Carrying through your application: <strong>' + selectedTL.name + '</strong> · $' +
+                   Number(selectedTL.price).toFixed(0) + ' / slot' +
+                   (selectedTL.fromMarketplace ? ' <span style="opacity:.75;">(selected from marketplace)</span>' : '');
+  banner.style.display = 'flex';
+}
+
+// Recompute the tradeline payment amount from the selected slot's price.
+function refreshTradelinePayment(){
+  const grid = document.getElementById('tl-coins');
+  if (!grid) return;
+  const sel = grid.querySelector('.coin-opt.selected') || grid.querySelector('.coin-opt');
+  if (!sel) return;
+  applyCoinNetwork('tl', sel.getAttribute('data-coin') || 'usdt',
+    document.querySelector('#tl-nets .net-pill.selected')?.textContent || 'TRC-20');
 }
 function submitApplication(prefix){
-  const maxes = { tl:7, rp:7, mn:5, co:4, ln:6, bf:6 };
+  const maxes = { tl:7, rp:7, mn:5, co:4, ln:6, bf:6, rr:5 };
   recordApplication(prefix);
   applyGoTo(prefix, maxes[prefix]);
   // Mark this wizard as needing reset the next time it's opened.
@@ -5250,10 +5404,10 @@ function submitApplication(prefix){
 const LS_APPS_KEY = 'tradelineiq_applications_v1';
 const SERVICE_LABELS = {
   tl:'Authorized-User Tradeline', rp:'Credit Report Dispute', mn:'3-Bureau Credit Monitoring',
-  co:'1-on-1 Credit Coaching', ln:'Loan Referral', bf:'Business Funding Resources'
+  co:'1-on-1 Credit Coaching', ln:'Loan Referral', bf:'Business Funding Resources', rr:'Rent & Bill Reporting'
 };
 const SERVICE_TYPEKEY = {
-  tl:'tradeline', rp:'repair', mn:'monitoring', co:'coaching', ln:'loan', bf:'businessfunding'
+  tl:'tradeline', rp:'repair', mn:'monitoring', co:'coaching', ln:'loan', bf:'businessfunding', rr:'rentreporting'
 };
 // Stages every application moves through, with how long after submission
 // each one becomes "done". Progress advances automatically over time.
@@ -5396,14 +5550,14 @@ function resetWizard(prefix){
 }
 
 // Map service-type slug → wizard prefix → panel suffix
-const WIZARD_PREFIX = { tradeline:'tl', repair:'rp', monitoring:'mn', coaching:'co', loan:'ln', businessfunding:'bf' };
-const WIZARD_PANEL  = { tl:'tradeline', rp:'repair', mn:'monitoring', co:'coaching', ln:'loan', bf:'businessfunding' };
+const WIZARD_PREFIX = { tradeline:'tl', repair:'rp', monitoring:'mn', coaching:'co', loan:'ln', businessfunding:'bf', rentreporting:'rr' };
+const WIZARD_PANEL  = { tl:'tradeline', rp:'repair', mn:'monitoring', co:'coaching', ln:'loan', bf:'businessfunding', rr:'rentreporting' };
 
 // Override openApplyFlow: always start the wizard fresh at step 1 when entering.
 function openApplyFlow(type){
   const panelMap = { tradeline:'apply-tradeline', repair:'apply-repair',
                      monitoring:'apply-monitoring', coaching:'apply-coaching', loan:'apply-loan',
-                     businessfunding:'apply-businessfunding' };
+                     businessfunding:'apply-businessfunding', rentreporting:'apply-rentreporting' };
   switchPanel(panelMap[type] || 'apply-hub', null);
   const prefix = WIZARD_PREFIX[type];
   if (prefix){
@@ -5412,6 +5566,8 @@ function openApplyFlow(type){
     // "applying" should always start at the beginning.
     resetWizard(prefix);
     delete pendingResets[prefix];
+    // Carry the chosen tradeline (from marketplace or a prior pick) into the flow.
+    if (prefix === 'tl' && typeof syncTradelineSelection === 'function') syncTradelineSelection();
   }
 }
 
@@ -5551,11 +5707,18 @@ function applyCoinNetwork(prefix, coin, network){
   if (badge)   badge.textContent   = network;
   // Recompute the amount-to-send display
   const meta = COIN_META[coin] || COIN_META.usdt;
-  const usd  = WIZARD_USD[prefix] || 0;
+  const usd  = (prefix === 'tl' && typeof selectedTL !== 'undefined' && selectedTL)
+               ? Number(selectedTL.price) : (WIZARD_USD[prefix] || 0);
   const amt  = usd * meta.rate;
   const fmt  = meta.rate >= 1 ? amt.toFixed(2) : meta.rate >= 0.001 ? amt.toFixed(4) : amt.toFixed(6);
   const amtEl = document.getElementById(prefix+'-coin-amount');
   if (amtEl) amtEl.textContent = fmt + ' ' + meta.name;
+  // Keep the tradeline's USD totals in sync with the selected slot price.
+  if (prefix === 'tl'){
+    const usdStr = '$' + usd.toFixed(2);
+    const u1 = document.getElementById('tl-coin-usd'); if (u1) u1.textContent = '≈ ' + usdStr + ' USD';
+    const u2 = document.getElementById('tl-pay-usd');  if (u2) u2.textContent = usdStr;
+  }
 }
 
 function selectCoin(prefix, el){
