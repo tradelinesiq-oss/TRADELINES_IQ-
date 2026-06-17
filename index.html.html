@@ -1909,6 +1909,7 @@ a[onclick]{cursor:pointer;}
                 <option value="">Select…</option>
                 <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option>
                 <option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option>
+                <option>District of Columbia</option>
                 <option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option>
                 <option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option>
                 <option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option>
@@ -2444,7 +2445,7 @@ a[onclick]{cursor:pointer;}
         </div>
         <div class="field-row-3">
           <div class="field"><label class="field-label">State</label>
-            <select class="select" id="p-state"><option>Texas</option><option>California</option><option>New York</option><option>Florida</option><option>Other</option></select>
+            <select class="select" id="p-state"><option value="">Select…</option><option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>District of Columbia</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option></select>
           </div>
           <div class="field"><label class="field-label">ZIP</label><input class="input" type="text" value="" maxlength="5" id="p-zip" inputmode="numeric"/></div>
           <div class="field"><label class="field-label">Country</label><select class="select" disabled style="opacity:0.7;"><option>United States</option></select></div>
@@ -3121,7 +3122,7 @@ a[onclick]{cursor:pointer;}
           <div class="field"><label class="field-label">City</label><input class="input" type="text" id="tl-city" value="" required/></div>
         </div>
         <div class="field-row-3">
-          <div class="field"><label class="field-label">State</label><select class="select" id="tl-state" required><option value="" disabled selected>— Select —</option><option>Texas</option><option>California</option><option>New York</option></select></div>
+          <div class="field"><label class="field-label">State</label><select class="select" id="tl-state" required><option value="" disabled selected>— Select —</option><option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>District of Columbia</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option></select></div>
           <div class="field"><label class="field-label">ZIP</label><input class="input" type="text" id="tl-zip" value="" maxlength="5" required/></div>
           <div class="field"><label class="field-label">Phone</label><input class="input" type="tel" id="tl-phone" value="" required/></div>
         </div>
@@ -3172,10 +3173,6 @@ a[onclick]{cursor:pointer;}
           <div class="review-row"><span>Slot cost</span><span id="tl-review-price">$285.00</span></div>
           <div class="review-row"><span>Reporting window</span><span>72 hours</span></div>
           <div class="review-row"><span>Slot duration</span><span>60 days (2 statement cycles)</span></div>
-        </div>
-        <div class="disclosure-box">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          <div><strong>Required disclosures.</strong> AU tradelines are not credit-repair services. We do not guarantee a specific score increase. Authorized-user reporting is governed by Regulation B (ECOA). You retain the right under FCRA to dispute any reporting inaccuracy directly with the bureaus at no cost.</div>
         </div>
         <label class="check"><input type="checkbox" id="tl-consent-1" data-required/><span>I confirm I am not using this AU tradeline to misrepresent my finances on a current or pending loan application.</span></label>
         <label class="check"><input type="checkbox" id="tl-consent-2" data-required/><span>I agree to the <a>Tradeline Service Agreement</a> and <a>3-Day Cancellation Right</a>.</span></label>
@@ -3333,7 +3330,7 @@ a[onclick]{cursor:pointer;}
         <div class="field"><label class="field-label">Current address</label><input class="input" type="text" value="" required/></div>
         <div class="field-row-3">
           <div class="field"><label class="field-label">City</label><input class="input" type="text" value="" required/></div>
-          <div class="field"><label class="field-label">State</label><select class="select" required><option value="" disabled selected>— Select —</option><option>Texas</option></select></div>
+          <div class="field"><label class="field-label">State</label><select class="select" required><option value="" disabled selected>— Select —</option><option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>District of Columbia</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option></select></div>
           <div class="field"><label class="field-label">ZIP</label><input class="input" type="text" value="" required/></div>
         </div>
         <div class="field"><label class="field-label">Previous addresses <span class="opt">If moved in last 2 years</span></label><textarea class="textarea" placeholder="Street, City, State ZIP — one per line"></textarea></div>
